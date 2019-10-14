@@ -1,3 +1,4 @@
 # PhotoEditor
 
-https://oxanak.github.io/photoEditor/photoeditor.html
+
+https://oxanak.github.io/photoEditor/home.html
