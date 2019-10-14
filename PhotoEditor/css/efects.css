@@ -1,0 +1,1403 @@
+﻿
+img,
+div{
+      width: 150px;
+  height:150px;
+  background-size: cover;
+  background-position: center;
+      display:inline-block;
+      float:left;
+      margin:5px;
+}
+
+
+
+   #div1 {
+            width: 500px;
+            height: 333px;
+            background-repeat: no-repeat, repeat;
+            background: url("../img/before.jpg"),#533a16;
+            background-size: cover;
+            background-blend-mode: lighten;
+        }
+
+
+        .colored-pencil-effect {
+            background-image: url(../img/before.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        @supports (filter: invert(1)) and (mix-blend-mode: color) {
+            .colored-pencil-effect {
+                position: relative;
+            }
+
+                .colored-pencil-effect:before, .colored-pencil-effect:after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-size: cover;
+                    box-shadow: inset 0 0 0 1px black;
+                }
+
+                .colored-pencil-effect:before {
+                    background-image: url(../img/before.jpg), url(../img/before.jpg);
+                    background-blend-mode: difference;
+                    background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+                    filter: brightness(2) invert(1) grayscale(1);
+                }
+
+                .colored-pencil-effect:after {
+                    background: inherit;
+                    mix-blend-mode: color;
+                }
+        }
+
+
+.effect_1977 {
+     background-image: url(../img/temp3.JPG);
+  filter: sepia(0.5) hue-rotate(-30deg) saturate(1.2) contrast(0.8);
+}
+.effect_amaro {
+          background-image: url(../img/temp3.JPG);
+  filter: hue-rotate(-10deg) contrast(0.9) brightness(1.1) saturate(1.5);
+}
+.effect_brannan {
+        background-image: url(../img/temp3.JPG);
+    filter: sepia(0.5) contrast(1.4);
+}
+.effect_earlybird {
+     background-image: url(../img/temp3.JPG);
+  filter: sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg);
+}
+.effrct_kelvin {
+         background-image: url(../img/temp3.JPG);
+  filter: sepia(0.4) saturate(2.4) brightness(1.3) contrast(1);
+ }
+.effect_inkwell {
+          background-image: url(../img/temp3.JPG);
+  filter: grayscale(1) brightness(1.2) contrast(1.05);
+}
+.effect_lofi {
+          background-image: url(../img/temp3.JPG);
+  filter: contrast(1.4) brightness(0.9) sepia(0.05);
+}
+.effect_nashville {
+         background-image: url(../img/temp3.JPG);
+  filter: sepia(0.4) saturate(1.5) contrast(0.9) brightness(1.1) hue-rotate(-15deg);
+}
+.effect_sutro {
+         background-image: url(../img/temp3.JPG);
+  filter: brightness(0.75) contrast(1.3) sepia(0.5) hue-rotate(-25deg);
+}
+.effect_toaster {
+         background-image: url(../img/temp3.JPG);
+  filter:sepia(0.4) saturate(2.5) hue-rotate(-30deg) contrast(0.67);
+}
+.effect_willow
+{
+         background-image: url(../img/temp3.JPG);
+filter: saturate(0.02) contrast(0.85) brightness(1.2) sepia(0.02);
+}
+
+        
+.item1a {
+  background-image:url(/img/effects/multi/m1.png), url(/img/temp3.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item1b {
+  background-image:url(/img/effects/multi/m1.png), url(/img/temp3.JPG);
+  background-blend-mode: screen;
+ 
+  }
+.item1c {
+  background-image: url(/img/temp1.JPG),url(/img/effects/multi/m1.png);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+.item2a {
+  background-image:url(/img/effects/multi/m2.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item2b {
+  background-image:url(/img/effects/multi/m2.jpg), url(/img/temp1.JPG);
+  background-blend-mode: screen;
+ 
+  }
+.item2c {
+  background-image: url(/img/temp2.JPG),url(/img/effects/multi/m2.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+.item3a {
+  background-image:url(/img/effects/multi/m3.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item3b {
+  background-image:url(/img/effects/multi/m3.jpg), url(/img/temp2.JPG);
+  background-blend-mode: screen;
+ 
+  }
+.item3c {
+  background-image: url(/img/temp2.JPG),url(/img/effects/multi/m3.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+
+.item4a {
+  background-image:url(/img/effects/multi/m4.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item4b {
+  background-image:url(/img/effects/multi/m4.jpg), url(/img/temp1.JPG);
+  background-blend-mode: screen;
+ 
+  }
+.item4c {
+  background-image: url(/img/temp3.JPG),url(/img/effects/multi/m4.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+
+
+.item5a {
+  background-image:url(/img/effects/multi/m5.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item5b {
+  background-image:url(/img/temp3.JPG),url(/img/effects/multi/m5.jpg);
+  background-blend-mode: screen;
+ 
+  }
+.item5c {
+  background-image: url(/img/temp1.JPG),url(/img/effects/multi/m5.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+.item6a {
+  background-image:url(/img/effects/multi/m6.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item6b {
+  background-image:url(/img/temp2.JPG),url(/img/effects/multi/m6.jpg);
+  background-blend-mode: screen;
+ 
+  }
+.item6c {
+  background-image: url(/img/temp3.JPG),url(/img/effects/multi/m6.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+.item7a {
+  background-image:url(/img/effects/multi/m7.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item7b {
+  background-image:url(/img/temp3.JPG),url(/img/effects/multi/m7.jpg);
+  background-blend-mode: screen;
+ 
+  }
+.item7c {
+  background-image: url(/img/temp2.JPG),url(/img/effects/multi/m7.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+.item8a {
+  background-image:url(/img/effects/multi/m8.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item8b {
+  background-image:url(/img/temp3.JPG),url(/img/effects/multi/m8.jpg);
+  background-blend-mode: screen;
+ 
+  }
+.item8c {
+  background-image: url(/img/temp3.JPG),url(/img/effects/multi/m8.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+
+.item9a {
+  background-image:url(/img/effects/multi/m9.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item9b {
+  background-image:url(/img/temp3.JPG),url(/img/effects/multi/m9.jpg);
+  background-blend-mode: screen;
+ 
+  }
+.item9c {
+  background-image: url(/img/temp3.JPG),url(/img/effects/multi/m9.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+.item10a {
+  background-image:url(/img/effects/multi/m10.jpg), url(/img/temp1.JPG);
+  background-blend-mode: overlay;
+ 
+  }
+.item10b {
+  background-image:url(/img/temp3.JPG),url(/img/effects/multi/m10.jpg);
+  background-blend-mode: screen;
+ 
+  }
+.item10c {
+  background-image: url(/img/temp3.JPG),url(/img/effects/multi/m10.jpg);
+  background-blend-mode:  luminosity;
+ 
+  }
+
+
+/*@supports ((-webkit-filter:invert(1)) or (filter:invert(1))) and (background-blend-mode:difference) {
+    .pencil-effect {
+        background-image: url(/img/temp3.JPG),url(/img/temp3.JPG);
+        background-blend-mode: difference;
+        background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px);
+        -webkit-filter: brightness(2) invert(1) grayscale(1);
+        filter: brightness(2) invert(1) grayscale(1);
+        box-shadow: inset 0 0 0 1px #000;
+    }
+}*/
+.watercolor-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports ((-webkit-filter:blur(2px)) or (filter:blur(2px))) and (mix-blend-mode:multiply) {
+    .watercolor-effect {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .watercolor-effect:after, .watercolor-effect:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+        }
+
+        .watercolor-effect:before {
+            background-image: url(photo.jpg),url(photo.jpg);
+            background-blend-mode: difference;
+            background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px);
+            -webkit-filter: brightness(2) invert(1) grayscale(1);
+            filter: brightness(2) invert(1) grayscale(1);
+            box-shadow: inset 0 0 0 1px #000;
+        }
+
+        .watercolor-effect:after {
+            background-image: url(photo.jpg);
+            background-position: 50%;
+            mix-blend-mode: multiply;
+            -webkit-filter: brightness(1.3) blur(2px) contrast(2);
+            filter: brightness(1.3) blur(2px) contrast(2);
+        }
+}
+
+.emboss {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+
+        background-image: url(photo.jpg),url(photo.jpg),url(photo.jpg);
+        background-blend-mode: difference,screen;
+        background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px),50%;
+        -webkit-filter: brightness(2) invert(1) grayscale(1);
+        filter: brightness(2) invert(1) grayscale(1);
+    }
+
+
+.colored-pencil-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports ((-webkit-filter:invert(1)) or (filter:invert(1))) and (mix-blend-mode:color) {
+    .colored-pencil-effect {
+        position: relative;
+    }
+
+        .colored-pencil-effect:after, .colored-pencil-effect:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-size: cover;
+            box-shadow: inset 0 0 0 1px #000;
+        }
+
+        .colored-pencil-effect:before {
+            background-image: url(photo.jpg),url(photo.jpg);
+            background-blend-mode: difference;
+            background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px);
+            -webkit-filter: brightness(2) invert(1) grayscale(1);
+            filter: brightness(2) invert(1) grayscale(1);
+        }
+
+        .colored-pencil-effect:after {
+            background: inherit;
+            mix-blend-mode: color;
+        }
+}
+
+.chalkboard-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports ((-webkit-filter:grayscale(1)) or (filter:grayscale(1))) and (background-blend-mode:difference) {
+    .chalkboard-effect {
+        background-image: url(photo.jpg),url(photo.jpg);
+        background-blend-mode: difference;
+        background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px);
+        -webkit-filter: brightness(1.5) grayscale(1);
+        filter: brightness(1.5) grayscale(1);
+    }
+}
+
+.colored-chalkboard-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports ((-webkit-filter:brightness(2)) or (filter:brightness(2))) and (background-blend-mode:color,difference) {
+    .colored-chalkboard-effect {
+        background-image: url(photo.jpg),url(photo.jpg),url(photo.jpg);
+        background-size: cover;
+        background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px),50%;
+        background-blend-mode: color,difference;
+        -webkit-filter: brightness(2);
+        filter: brightness(2);
+    }
+}
+
+.airbrush-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports ((-webkit-filter:blur(5px) contrast(5)) or (filter:blur(5px) contrast(5))) and (mix-blend-mode:multiply) {
+    .airbrush-effect {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .airbrush-effect:after {
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            -webkit-filter: brightness(1.5) saturate(100) blur(5px) contrast(5);
+            filter: brightness(1.5) saturate(100) blur(5px) contrast(5);
+            mix-blend-mode: multiply;
+        }
+}
+
+.hallucination-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (mix-blend-mode:multiply) {
+    .hallucination-effect {
+        position: relative;
+        overflow: hidden;
+        background-color: #f0f;
+        background-blend-mode: screen;
+    }
+
+        .hallucination-effect:after, .hallucination-effect:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            mix-blend-mode: multiply;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .hallucination-effect:before {
+            background-color: #ff0;
+            background-blend-mode: screen;
+            -webkit-transform-origin: top left;
+            transform-origin: top left;
+        }
+
+        .hallucination-effect:after {
+            background-color: cyan;
+            background-blend-mode: screen;
+            -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+}
+
+.flannel-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (background-blend-mode:overlay) {
+    .flannel-effect {
+        background-image: url(photo.jpg),url(photo.jpg),url(photo.jpg);
+        background-position: 50%;
+        background-size: 100%,100000% 100%,100% 100000%;
+        background-blend-mode: overlay;
+    }
+}
+
+.low-ink-x-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (background-blend-mode:screen,overlay) {
+    .low-ink-x-effect {
+        background-image: url(photo.jpg),url(photo.jpg),url(photo.jpg);
+        background-size: 100% 100%,10000% 100%;
+        background-blend-mode: screen,overlay;
+    }
+}
+
+.low-ink-y-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (background-blend-mode:screen,overlay) {
+    .low-ink-y-effect {
+        background-image: url(photo.jpg),url(photo.jpg),url(photo.jpg);
+        background-size: 100% 100%,100% 1000%;
+        background-blend-mode: screen,overlay;
+    }
+}
+
+.collage-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (background-blend-mode:overlay) {
+    .collage-effect {
+        background-image: url(photo.jpg),url(photo.jpg),url(photo.jpg),url(photo.jpg),url(photo.jpg),url(photo.jpg);
+        background-size: 200%,80%,60%,50%,40%,100%;
+        background-position: 50%,80%,30%,0;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+    }
+}
+
+.mosaic-effect {
+    background-image: url(photo.jpg),url(photo.jpg);
+    background-size: cover,5% 5%;
+    background-position: 50%;
+    background-blend-mode: overlay;
+}
+
+.photo-border-effect {
+    background-image: url(photo.jpg),url(photo.jpg);
+    background-position: 50%;
+    background-size: 60%,20%;
+    background-repeat: no-repeat,repeat;
+}
+
+.infrared-effect {
+    background-image: url(photo.jpg);
+    -webkit-filter: hue-rotate(180deg) saturate(2);
+    filter: hue-rotate(180deg) saturate(2);
+}
+
+.infrared-effect, .night-vision-effect {
+    background-size: cover;
+    background-position: 50%;
+}
+
+.night-vision-effect {
+    background-image: url(photo.jpg),radial-gradient(#0f0,#000),repeating-linear-gradient(transparent,rgba(0,0,0,.1) 2.5px,transparent 5px);
+    background-blend-mode: overlay;
+}
+
+.warhol-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (background-blend-mode:color) {
+    .warhol-effect {
+        background-image: linear-gradient(#14ebff,#14ebff 50%,#ffff70 0,#ffff70),linear-gradient(#ff85da,#ff85da 50%,#aaa 0,#aaa),url(photo.jpg);
+        background-size: 50% 100%,50% 100%,50% 50%;
+        background-position: 0 0,100% 0;
+        background-repeat: no-repeat,no-repeat,repeat;
+        background-blend-mode: color;
+    }
+}
+
+.selective-color-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports ((-webkit-filter:brightness(3)) or (filter:brightness(3))) and (mix-blend-mode:color) {
+    .selective-color-effect {
+        position: relative;
+    }
+
+        .selective-color-effect:after, .selective-color-effect:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: inherit;
+            background-color: red;
+            background-blend-mode: screen;
+            mix-blend-mode: color;
+            -webkit-filter: brightness(3);
+            filter: brightness(3);
+        }
+}
+
+.mirror-x-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (transform:scaleX(-1)) {
+    .mirror-x-effect {
+        position: relative;
+    }
+
+        .mirror-x-effect:after, .mirror-x-effect:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: inherit;
+        }
+
+        .mirror-x-effect:before {
+            left: 0;
+            right: 50%;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        .mirror-x-effect:after {
+            left: 50%;
+            right: 0;
+        }
+}
+
+.mirror-y-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+@supports (transform:scaleY(-1)) {
+    .mirror-y-effect {
+        position: relative;
+    }
+
+        .mirror-y-effect:after, .mirror-y-effect:before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: inherit;
+        }
+
+        .mirror-y-effect:before {
+            top: 0;
+            bottom: 50%;
+            -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+        }
+
+        .mirror-y-effect:after {
+            top: 50%;
+            bottom: 0;
+        }
+}
+
+[class$=-effect] {
+    display: inline-block !important;
+    position: relative !important;
+}
+
+    [class$=-effect] img {
+        vertical-align: top !important;
+        margin: 0 !important;
+        visibility: hidden !important;
+    }*/
+
+/*.big{
+    width: 300px;
+    height:300px;
+}
+    .willow{
+        background-image: url(/img/temp1.JPG);
+        z-index: 1;
+
+    }
+
+  
+
+    .willow::before {
+        background-color: radial-gradient(40% circle, #d4a9af 55%, #000 150%);
+        mix-blend-mode: overlay;
+             z-index: 2;
+    }
+
+    .willow::after {
+        background-color: #d8cdcb;
+        mix-blend-mode: color;
+           z-index: 3;
+    }*/
+
+
+.filter-crema {
+      background-image: url(/img/temp3.JPG);
+  -webkit-filter: sepia(.5) contrast(1.25) brightness(1.15) saturate(.9) hue-rotate(-2deg);
+  filter: sepia(.5) contrast(1.25) brightness(1.15) saturate(.9) hue-rotate(-2deg);
+}
+
+.filter-ginza {
+     background-image: url(/img/temp3.JPG);
+  -webkit-filter: sepia(.25) contrast(1.15) brightness(1.2) saturate(1.35) hue-rotate(-5deg);
+  filter: sepia(.25) contrast(1.15) brightness(1.2) saturate(1.35) hue-rotate(-5deg);
+}
+.filter-helena {
+     background-image: url(/img/temp3.JPG);
+  -webkit-filter: sepia(.5) contrast(1.05) brightness(1.05) saturate(1.35);
+  filter: sepia(.5) contrast(1.05) brightness(1.05) saturate(1.35);
+}
+.filter-xpro-ii {
+     background-image: url(/img/temp3.JPG);
+  -webkit-filter: sepia(.45) contrast(1.25) brightness(1.75) saturate(1.3) hue-rotate(-5deg);
+  filter: sepia(.45) contrast(1.25) brightness(1.75) saturate(1.3) hue-rotate(-5deg);
+}
+
+.transform1{
+    background-image:url(/img/clipart/corners/corner1.png);
+ transform:scale(2);
+
+
+
+}
+
+
+.colored-chalkboard-effect {
+  background-image: url(/img/before.jpg);
+  background-size: cover;
+  background-position: center;
+
+    background-image: url(/img/before.jpg),url(/img/before.jpg),url(/img/before.jpg);
+    background-size: cover;
+    background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px), center;
+    background-blend-mode: color, difference;
+    filter: brightness(2);
+  }
+
+.chalkboard {
+  background-image: url(/img/before.jpg);
+  background-size: cover;
+  background-position: center;
+
+    background-image: url(/img/before.jpg),url(/img/before.jpg);
+    background-blend-mode: difference;
+    background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+    filter: brightness(1.5) grayscale(1);
+  }
+
+
+.pencil-effect2 {
+    background-image: url(/img/before.jpg);
+    background-size: cover;
+    background-position: 50%;
+
+    background-image: url(/img/before.jpg),url(/img/before.jpg);
+        background-blend-mode: difference;
+        background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px);
+        -webkit-filter: brightness(2) invert(1) grayscale(1);
+        filter: brightness(2) invert(1) grayscale(1);
+        box-shadow: inset 0 0 0 1px #000;
+}
+
+.emboss {
+    background-image:url(/img/before.jpg);
+    background-size: cover;
+    background-position: 50%;
+
+        background-image: url(/img/before.jpg),url(/img/before.jpg),url(/img/before.jpg);
+        background-blend-mode: difference,screen;
+        background-position: calc(50% - 1px) calc(50% - 1px),calc(50% + 1px) calc(50% + 1px),50%;
+        -webkit-filter: brightness(2) invert(1) grayscale(1);
+        filter: brightness(2) invert(1) grayscale(1);
+    }
+
+
+.colored-pencil-effect {
+ 
+  background-image:url(/img/before.jpg);
+  background-size: cover;
+  background-position: center;
+
+   background-image: url(/img/before.jpg),url(/img/before.jpg);
+    background-blend-mode:  screen;
+     mix-blend-mode: color;
+    background-size: cover;
+    background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+
+    filter: brightness(2) invert(1) grayscale(1);
+   
+   
+   
+
+       /*background-size: cover;
+    box-shadow: inset 0 0 0 1px black;
+      background: inherit;
+    mix-blend-mode: color;*/
+}
+
+/*@supports (filter: invert(1)) and (mix-blend-mode: color) {
+  .colored-pencil-effect {
+    position: relative;
+  }*/
+  ./*colored-pencil-effect:before, 
+  .colored-pencil-effect:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1px black;
+  }
+  .colored-pencil-effect:before {
+    background-image: url(/img/temp3.JPG),url(/img/temp3.JPG);
+    background-blend-mode: difference;
+    background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+    filter: brightness(2) invert(1) grayscale(1);
+  }
+  .colored-pencil-effect:after {
+    background: inherit;
+    mix-blend-mode: color;
+  }*/
+
+
+
+
+
+
+.c1{
+  
+  background-image:url(/img/effects/bokeh/b3.jpg), url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+   
+.c2 {
+    background-image:url(/img/effects/bokeh/b5.jpg), url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+
+
+
+   .c3{
+  
+  background-image:url(/img/effects/bokeh/b6.jpg), url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+
+
+   .c4{
+  
+ background-image:url(/img/effects/bokeh/b7.jpg), url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+ 
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+.c5 {
+  
+ background-image:url(/img/effects/bokeh/b8.jpg), url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+.c6 {
+  
+  background-image: url(/img/effects/bokeh/b11.png),url(/img/temp4.jpg);
+  background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+    .c7 {
+  
+ background-image:url(/img/effects/bokeh/b12.jpg), url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+     .c8 {
+ background-image:url(/img/effects/bokeh/b13.jpg), url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+      .c9 {
+  
+  background-image:url(/img/effects/bokeh/b14.jpg),url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+     
+       .c10 {
+  
+  background-image:url(/img/effects/bokeh/b15.jpg),url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+      .c11 {
+  background-image:url(/img/effects/bokeh/b16.png),url(/img/temp4.jpg);
+   background-blend-mode:overlay;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+
+
+
+
+
+
+
+
+  
+       .t1{
+  
+  background-image:url(/img/clipart/land/bw/landBW1.jpg),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+
+              
+  
+       .t2{
+  
+  background-image:url(/img/clipart/land/bw/landBW2.jpg),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+         
+       .t3{
+  
+  background-image:url(/img/clipart/land/bw/landBW3.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+         
+       .t4{
+  
+  background-image:url(/img/clipart/land/bw/landBW4.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+         
+       .t5{
+  
+  background-image:url(/img/clipart/land/bw/landBW5.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+
+
+
+         
+       .t6{
+  
+  background-image:url(/img/clipart/land/bw/landBW6.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+                
+       .t7{
+  
+  background-image:url(/img/clipart/land/bw/landBW7.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                
+       .t8{
+  
+  background-image:url(/img/clipart/land/bw/landBW8.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+ .t9{
+  
+  background-image:url(/img/clipart/land/bw/landBW9.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+  .t10{
+  
+  background-image:url(/img/clipart/land/bw/landBW10.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+   .t11{
+  
+  background-image:url(/img/clipart/land/bw/landBW11.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+    .t12{
+  
+  background-image:url(/img/clipart/land/bw/landBW12.jpg),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+     .t13{
+  
+  background-image:url(/img/clipart/land/bw/landBW13.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+      .t14{
+  
+  background-image:url(/img/clipart/land/bw/landBW14.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+     
+      
+      .t15{
+  
+  background-image:url(/img/clipart/land/bw/landBW15.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+         .t16{
+  
+  background-image:url(/img/clipart/land/bw/landBW16.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+         
+         .t17{
+  
+  background-image:url(/img/clipart/land/bw/landBW17.jpg),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+         
+         .t18{
+  
+  background-image:url(/img/clipart/land/bw/landBW18.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+    
+   .t19{
+  
+  background-image:url(/img/clipart/land/bw/landBW19.jpg),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+    
+    .t20{
+  
+  background-image:url(/img/clipart/land/bw/landBW20.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+     .t21{
+  
+  background-image:url(/img/clipart/land/bw/landBW21.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+      .t22{
+  
+  background-image:url(/img/clipart/land/bw/landBW22.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+     .t23{
+  
+  background-image:url(/img/clipart/land/bw/landBW23.jpg),url(/img/temp4.jpg);
+ 
+ background-blend-mode:darken;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+     .t24{
+  
+  background-image:url(/img/clipart/land/col/landCOL24.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+    
+    
+    .t25{
+  
+  background-image:url(/img/clipart/land/col/landCOL25.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+    .t26{
+  
+  background-image:url(/img/clipart/land/col/landCOL26.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  } 
+        /* .t19{
+  
+  background-image:url(/img/clipart/port/col/portCOL19.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }    
+ 
+         .t20{
+  
+  background-image:url(/img/clipart/port/col/portCOL20.png),url(/img/temp4.jpg);
+ 
+ background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }*/         
+          
+       /*
+          .c12 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/12.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+             
+                .c14 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/14.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                   .c15 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/15.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                      .c16 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/16.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                         .c17{
+  
+  background-image:url(/img/clipart/coloredframe_sq/17.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                            .c18 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/18.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                               .c19 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/19.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                                  .c20 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/20.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                                  .c21 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/21.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                                  .c22 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/22.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+
+                                   .c23 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/23.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                                    .c24{
+  
+  background-image:url(/img/clipart/coloredframe_sq/24.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }*/
+                                     /*.c25{
+  
+  background-image:url(/img/clipart/coloredframe_sq/25.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }
+                                      .c26 {
+  
+  background-image:url(/img/clipart/coloredframe_sq/26.png), url(/img/temp1.JPG);
+  background-blend-mode:normal;
+    background-repeat: no-repeat;
+  background-size:cover;
+
+  background-position:center;
+  }*/

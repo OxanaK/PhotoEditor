@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{859AB314-9715-432D-9208-A63336EBCDD8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoEditor</RootNamespace>
+    <AssemblyName>PhotoEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AandQ.html" />
+    <Content Include="css\efects.css" />
+    <Content Include="css\instagram.css" />
+    <Content Include="css\photoeditor.css" />
+    <Content Include="img\a1.jpg" />
+    <Content Include="img\a2.jpg" />
+    <Content Include="img\a3.jpg" />
+    <Content Include="img\aa1.jpg" />
+    <Content Include="img\aa4.jpg" />
+    <Content Include="img\aaa1.jpg" />
+    <Content Include="img\border3FP.jpg" />
+    <Content Include="img\border4FP.jpg" />
+    <Content Include="img\clipart\bordure\bord19.png" />
+    <Content Include="img\clipart\bordure\bord22.png" />
+    <Content Include="img\clipart\bordure\bord23.png" />
+    <Content Include="img\clipart\bordure\bord13.png" />
+    <Content Include="img\clipart\bordure\bord25.png" />
+    <Content Include="img\clipart\bordure\bord3.png" />
+    <Content Include="img\clipart\bordure\bord5.png" />
+    <Content Include="img\clipart\bordure\bord6.png" />
+    <Content Include="img\clipart\bordure\bord26.png" />
+    <Content Include="img\clipart\bordure\bord9.png" />
+    <Content Include="img\clipart\bordure\bord11.png" />
+    <Content Include="img\clipart\bordure\bord7.png" />
+    <Content Include="img\clipart\bordure\bord12.png" />
+    <Content Include="img\clipart\bordure\bord14.png" />
+    <Content Include="img\clipart\bordure\bord15.png" />
+    <Content Include="img\clipart\bordure\bord4.png" />
+    <Content Include="img\clipart\bordure\bord21.png" />
+    <Content Include="img\coll1FP.jpg" />
+    <Content Include="img\coll2FP.jpg" />
+    <Content Include="img\coll3FP.jpg" />
+    <Content Include="img\coll4FP.jpg" />
+    <Content Include="img\collage\bwColl1.png" />
+    <Content Include="img\collage\colColl20.png" />
+    <Content Include="img\collage\colColl15.png" />
+    <Content Include="img\collage\colColl24.png" />
+    <Content Include="img\collage\colColl3.png" />
+    <Content Include="img\collage\colColl18.png" />
+    <Content Include="img\collage\colColl21.png" />
+    <Content Include="img\collage\colColl2.png" />
+    <Content Include="img\collage\colColl9.png" />
+    <Content Include="img\collage\bwColl14.png" />
+    <Content Include="img\collage\bwColl15.png" />
+    <Content Include="img\collage\bwColl12.png" />
+    <Content Include="img\collage\bwColl13.png" />
+    <Content Include="img\collage\colColl14.png" />
+    <Content Include="img\collage\bwColl20.png" />
+    <Content Include="img\collage\colColl19.png" />
+    <Content Include="img\collage\colColl16.png" />
+    <Content Include="img\collage\bwColl16.png" />
+    <Content Include="img\collage\colColl13.png" />
+    <Content Include="img\collage\bwColl2.png" />
+    <Content Include="img\collage\bwColl18.png" />
+    <Content Include="img\collage\colColl1.png" />
+    <Content Include="img\collage\colColl17.png" />
+    <Content Include="img\collage\colColl4.png" />
+    <Content Include="img\collage\bwColl7.png" />
+    <Content Include="img\collage\bwColl19.png" />
+    <Content Include="img\collage\bwColl9.png" />
+    <Content Include="img\collage\colColl7.png" />
+    <Content Include="img\collage\bwColl10.png" />
+    <Content Include="img\collage\bwColl8.png" />
+    <Content Include="img\collage\bwColl3.png" />
+    <Content Include="img\collage\bwColl4.png" />
+    <Content Include="img\collage\colColl10.png" />
+    <Content Include="img\collage\colColl8.png" />
+    <Content Include="img\collage\bwColl17.png" />
+    <Content Include="img\collage\colColl11.png" />
+    <Content Include="img\collage\Collage-PNG-Transparent-Image.png" />
+    <Content Include="img\collage\bwColl26.png" />
+    <Content Include="img\collage\bwColl29.png" />
+    <Content Include="img\collage\bwColl24.png" />
+    <Content Include="img\collage\bwColl25.png" />
+    <Content Include="img\collage\bwColl27.png" />
+    <Content Include="img\collage\bwColl30.png" />
+    <Content Include="img\collage\bwColl28.png" />
+    <Content Include="img\collage\bwColl5.png" />
+    <Content Include="img\collage\bwColl11.png" />
+    <Content Include="img\collage\bwColl6.png" />
+    <Content Include="img\collage\Free-Sew-Frm-Clst2-GE.png" />
+    <Content Include="img\collage\gta_game_template_by_iruser-d9i2zb7.png" />
+    <Content Include="img\collage\colColl5.png" />
+    <Content Include="img\collage\colColl6.png" />
+    <Content Include="img\collage\colColl23.png" />
+    <Content Include="img\collage\colColl12.png" />
+    <Content Include="img\collage\colColl22.png" />
+    <Content Include="img\collage\bwColl21.png" />
+    <Content Include="img\collage\bwColl22.png" />
+    <Content Include="img\collage\pattern1.jpg" />
+    <Content Include="img\collage\pattern10.jpg" />
+    <Content Include="img\collage\pattern11.jpg" />
+    <Content Include="img\collage\pattern12.jpg" />
+    <Content Include="img\collage\pattern13.jpg" />
+    <Content Include="img\collage\pattern14.jpg" />
+    <Content Include="img\collage\pattern15.jpg" />
+    <Content Include="img\collage\pattern2.jpg" />
+    <Content Include="img\collage\pattern3.jpg" />
+    <Content Include="img\collage\pattern4.jpg" />
+    <Content Include="img\collage\pattern5.jpg" />
+    <Content Include="img\collage\pattern6.jpg" />
+    <Content Include="img\collage\pattern7.jpg" />
+    <Content Include="img\collage\pattern8.jpg" />
+    <Content Include="img\collage\pattern9.jpg" />
+    <Content Include="img\effects_exampls\clipart\l19.jpg" />
+    <Content Include="img\effects_exampls\clipart\l8.jpg" />
+    <Content Include="img\clipart\bwframe_sq\21545151.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq13.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq14.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq15.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq12.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq11.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq1.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq8.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq16.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq17.png" />
+    <Content Include="img\clipart\bwframe_sq\19.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq18.png" />
+    <Content Include="img\clipart\coloredframe_sq\20.png" />
+    <Content Include="img\clipart\coloredframe_sq\19.png" />
+    <Content Include="img\clipart\coloredframe_sq\2.png" />
+    <Content Include="img\clipart\coloredframe_sq\3.png" />
+    <Content Include="img\clipart\coloredframe_sq\11.png" />
+    <Content Include="img\clipart\coloredframe_sq\6.png" />
+    <Content Include="img\clipart\coloredframe_sq\7.png" />
+    <Content Include="img\clipart\coloredframe_sq\10.jpg" />
+    <Content Include="img\clipart\coloredframe_sq\12.png" />
+    <Content Include="img\clipart\coloredframe_sq\14.png" />
+    <Content Include="img\clipart\coloredframe_sq\5.png" />
+    <Content Include="img\clipart\coloredframe_sq\16.png" />
+    <Content Include="img\clipart\coloredframe_sq\17.png" />
+    <Content Include="img\clipart\coloredframe_sq\15.png" />
+    <Content Include="img\clipart\coloredframe_sq\1.png" />
+    <Content Include="img\clipart\coloredframe_sq\4.png" />
+    <Content Include="img\clipart\coloredframe_sq\21.png" />
+    <Content Include="img\clipart\coloredframe_sq\9.png" />
+    <Content Include="img\clipart\coloredframe_sq\13.png" />
+    <Content Include="img\clipart\coloredframe_sq\18.png" />
+    <Content Include="img\clipart\coloredframe_sq\8.png" />
+    <Content Include="img\clipart\coloredframe_sq\22.png" />
+    <Content Include="img\clipart\coloredframe_sq\23.png" />
+    <Content Include="img\clipart\coloredframe_sq\24.png" />
+    <Content Include="img\clipart\corners\corner20.png" />
+    <Content Include="img\clipart\corners\corner24.png" />
+    <Content Include="img\clipart\corners\corner25.png" />
+    <Content Include="img\clipart\corners\corner19.png" />
+    <Content Include="img\clipart\corners\corner21.png" />
+    <Content Include="img\clipart\corners\corner23.png" />
+    <Content Include="img\clipart\corners\corner7.png" />
+    <Content Include="img\clipart\corners\corner14.png" />
+    <Content Include="img\clipart\corners\corner13.png" />
+    <Content Include="img\clipart\corners\corner10.png" />
+    <Content Include="img\clipart\corners\corner6.png" />
+    <Content Include="img\clipart\corners\corner4.png" />
+    <Content Include="img\clipart\corners\corner3.png" />
+    <Content Include="img\clipart\corners\corner1.png" />
+    <Content Include="img\clipart\corners\corner2.png" />
+    <Content Include="img\clipart\corners\corner5.png" />
+    <Content Include="img\clipart\corners\corner9.png" />
+    <Content Include="img\clipart\corners\corner8.png" />
+    <Content Include="img\clipart\corners\corner11.png" />
+    <Content Include="img\clipart\corners\corner16.png" />
+    <Content Include="img\clipart\corners\corner17.png" />
+    <Content Include="img\clipart\corners\corner18.png" />
+    <Content Include="img\clipart\corners\corner12.png" />
+    <Content Include="img\clipart\corners\corner15.png" />
+    <Content Include="img\clipart\corners\corner22.png" />
+    <Content Include="img\clipart\land\bw\landBW16.png" />
+    <Content Include="img\clipart\land\bw\landBW11.png" />
+    <Content Include="img\clipart\land\bw\landBW22.png" />
+    <Content Include="img\clipart\land\bw\landBW6.png" />
+    <Content Include="img\clipart\land\bw\landBW18.png" />
+    <Content Include="img\clipart\land\bw\landBW1.jpg" />
+    <Content Include="img\clipart\land\bw\landBW2.jpg" />
+    <Content Include="img\clipart\land\bw\landBW3.png" />
+    <Content Include="img\clipart\land\bw\landBW5.png" />
+    <Content Include="img\clipart\land\bw\landBW7.png" />
+    <Content Include="img\clipart\land\bw\landBW8.png" />
+    <Content Include="img\clipart\land\bw\landBW9.png" />
+    <Content Include="img\clipart\land\bw\landBW10.png" />
+    <Content Include="img\clipart\land\bw\landBW12.jpg" />
+    <Content Include="img\clipart\land\bw\landBW17.jpg" />
+    <Content Include="img\clipart\land\bw\landBW4.png" />
+    <Content Include="img\clipart\land\bw\landBW2.png" />
+    <Content Include="img\clipart\land\bw\landBW14.png" />
+    <Content Include="img\clipart\land\bw\landBW15.png" />
+    <Content Include="img\clipart\land\bw\landBW13.png" />
+    <Content Include="img\clipart\land\bw\landBW21.png" />
+    <Content Include="img\clipart\land\col\landBW17.png" />
+    <Content Include="img\clipart\land\col\landBW18.png" />
+    <Content Include="img\clipart\land\bw\landBW19.jpg" />
+    <Content Include="img\clipart\land\bw\landBW20.png" />
+    <Content Include="img\clipart\land\col\landCOL23.png" />
+    <Content Include="img\clipart\land\col\landCOL16.png" />
+    <Content Include="img\clipart\land\col\landCOL26.png" />
+    <Content Include="img\clipart\land\col\landCOL11.png" />
+    <Content Include="img\clipart\land\col\landCOL25.png" />
+    <Content Include="img\clipart\land\col\landCOL24.png" />
+    <Content Include="img\clipart\land\col\landCOL20.png" />
+    <Content Include="img\clipart\land\col\landCOL21.png" />
+    <Content Include="img\clipart\land\col\landCOL22.png" />
+    <Content Include="img\clipart\land\col\landCOL5.png" />
+    <Content Include="img\clipart\land\col\landCOL19.png" />
+    <Content Include="img\clipart\land\col\landCOL18.png" />
+    <Content Include="img\clipart\land\col\landCOL17.png" />
+    <Content Include="img\clipart\land\col\landCOL7.png" />
+    <Content Include="img\clipart\land\col\landCOL2.png" />
+    <Content Include="img\clipart\land\col\landCOL1.png" />
+    <Content Include="img\clipart\land\col\landCOL3.png" />
+    <Content Include="img\clipart\land\col\landCOL4.png" />
+    <Content Include="img\clipart\land\col\landCOL8.png" />
+    <Content Include="img\clipart\land\col\landCOL9.png" />
+    <Content Include="img\clipart\land\col\landCOL10.png" />
+    <Content Include="img\clipart\land\col\landCOL12.png" />
+    <Content Include="img\clipart\land\col\landCOL13.png" />
+    <Content Include="img\clipart\land\col\landCOL15.png" />
+    <Content Include="img\clipart\land\col\landCOL6.png" />
+    <Content Include="img\clipart\land\col\landCOL14.png" />
+    <Content Include="img\clipart\bordure\bord2.png" />
+    <Content Include="img\clipart\bordure\bord1.png" />
+    <Content Include="img\clipart\bordure\bord16.png" />
+    <Content Include="img\clipart\bordure\bord8.png" />
+    <Content Include="img\clipart\bordure\bord18.png" />
+    <Content Include="img\clipart\bordure\bord17.png" />
+    <Content Include="img\clipart\bordure\bord24.png" />
+    <Content Include="img\clipart\bordure\bord10.png" />
+    <Content Include="img\clipart\bordure\bord20.png" />
+    <Content Include="img\clipart\port\bw\portBW20.png" />
+    <Content Include="img\clipart\port\bw\portBW19.jpg" />
+    <Content Include="img\clipart\port\bw\portBW21.png" />
+    <Content Include="img\clipart\port\bw\portBW22.jpg" />
+    <Content Include="img\clipart\port\bw\portBW16.jpg" />
+    <Content Include="img\clipart\port\bw\portBW11.jpeg" />
+    <Content Include="img\clipart\port\bw\portBW17.jpg" />
+    <Content Include="img\clipart\port\bw\portBW18.jpg" />
+    <Content Include="img\clipart\port\bw\portBW7.jpg" />
+    <Content Include="img\clipart\port\bw\portBW15.jpg" />
+    <Content Include="img\clipart\port\bw\portBW14.jpg" />
+    <Content Include="img\clipart\port\bw\portBW13.jpg" />
+    <Content Include="img\clipart\port\bw\portBW12.jpg" />
+    <Content Include="img\clipart\port\bw\portBW10.png" />
+    <Content Include="img\clipart\port\bw\portBW9.png" />
+    <Content Include="img\clipart\port\bw\portBW6.png" />
+    <Content Include="img\clipart\port\bw\portBW5.png" />
+    <Content Include="img\clipart\port\bw\portBW4.png" />
+    <Content Include="img\clipart\port\bw\portBW3.png" />
+    <Content Include="img\clipart\port\bw\portBW2.png" />
+    <Content Include="img\clipart\port\bw\portBW1.png" />
+    <Content Include="img\clipart\port\bw\portBW8.png" />
+    <Content Include="img\clipart\port\col\5bbace04d52962c7a913af8c08624ce9.png" />
+    <Content Include="img\clipart\port\col\portCOL6.png" />
+    <Content Include="img\clipart\port\col\portCOL8.png" />
+    <Content Include="img\clipart\port\bw\portBW12.png" />
+    <Content Include="img\clipart\port\col\portCOL11.png" />
+    <Content Include="img\clipart\port\col\portCOL14.png" />
+    <Content Include="img\clipart\port\col\portCOL17.png" />
+    <Content Include="img\clipart\port\col\portCOL18.png" />
+    <Content Include="img\clipart\port\col\portCOL12.png" />
+    <Content Include="img\clipart\port\col\portCOL20.png" />
+    <Content Include="img\clipart\port\col\portCOL3.png" />
+    <Content Include="img\clipart\port\col\portCOL19.png" />
+    <Content Include="img\clipart\port\col\portCOL15.png" />
+    <Content Include="img\clipart\port\col\portCOL13.png" />
+    <Content Include="img\clipart\port\col\portCOL7.png" />
+    <Content Include="img\clipart\port\col\portCOL5.png" />
+    <Content Include="img\clipart\port\col\portCOL1.png" />
+    <Content Include="img\clipart\port\col\portCOL9.png" />
+    <Content Include="img\clipart\port\col\portCOL10.png" />
+    <Content Include="img\clipart\port\col\portCOL4.png" />
+    <Content Include="img\clipart\port\col\portCOL2.png" />
+    <Content Include="img\clipart\port\col\portCOL16.png" />
+    <Content Include="img\clipart\port\col\wood_frame_gray_T.png" />
+    <Content Include="img\colchalkFP.jpg" />
+    <Content Include="img\colpencilFP.jpg" />
+    <Content Include="img\effects\bokeh\b3.jpg" />
+    <Content Include="img\effects\bokeh\b4.jpg" />
+    <Content Include="img\effects\bokeh\b5.jpg" />
+    <Content Include="img\effects\bokeh\b6.jpg" />
+    <Content Include="img\effects\bokeh\b7.jpg" />
+    <Content Include="img\effects\bokeh\b8.jpg" />
+    <Content Include="img\effects\bokeh\b12.jpg" />
+    <Content Include="img\effects\bokeh\b14.jpg" />
+    <Content Include="img\effects\bokeh\b13.jpg" />
+    <Content Include="img\effects\bokeh\b15.jpg" />
+    <Content Include="img\effects\bokeh\b11.png" />
+    <Content Include="img\effects\bokeh\b16.png" />
+    <Content Include="img\effects\bokeh\b9.jpg" />
+    <Content Include="img\effects\bokeh\b10.jpg" />
+    <Content Include="img\effects\texture\t20.jpg" />
+    <Content Include="img\effects\texture\t22.jpg" />
+    <Content Include="img\effects\texture\t21.jpg" />
+    <Content Include="img\effects\texture\t18.jpg" />
+    <Content Include="img\effects\texture\t2.jpg" />
+    <Content Include="img\effects\texture\t17.JPG" />
+    <Content Include="img\effects\texture\t16.jpeg" />
+    <Content Include="img\effects\texture\t9.png" />
+    <Content Include="img\effects\texture\t15.jpg" />
+    <Content Include="img\effects\texture\halftone1.png" />
+    <Content Include="img\effects\texture\halftone2.png" />
+    <Content Include="img\effects\texture\t14.png" />
+    <Content Include="img\effects\texture\t3.jpg" />
+    <Content Include="img\effects\texture\t1.jpg" />
+    <Content Include="img\effects\texture\t8.png" />
+    <Content Include="img\effects\texture\t5.jpeg" />
+    <Content Include="img\effects\texture\t6.jpg" />
+    <Content Include="img\effects\texture\t7.jpg" />
+    <Content Include="img\effects\texture\t4.png" />
+    <Content Include="img\effects\texture\t19.jpg" />
+    <Content Include="img\effects\texture\t13.png" />
+    <Content Include="img\effects\texture\t25.jpg" />
+    <Content Include="img\effects\texture\t24.jpg" />
+    <Content Include="img\effects_exampls\b1.jpg" />
+    <Content Include="img\effects_exampls\b10.jpg" />
+    <Content Include="img\effects_exampls\b11.jpg" />
+    <Content Include="img\effects_exampls\b12.jpg" />
+    <Content Include="img\effects_exampls\b13.jpg" />
+    <Content Include="img\effects_exampls\b14.jpg" />
+    <Content Include="img\effects_exampls\b14a.jpg" />
+    <Content Include="img\effects_exampls\b15.jpg" />
+    <Content Include="img\effects_exampls\b16.jpg" />
+    <Content Include="img\effects_exampls\b17.jpg" />
+    <Content Include="img\effects_exampls\b18.jpg" />
+    <Content Include="img\effects_exampls\b19.jpg" />
+    <Content Include="img\effects_exampls\b2.jpg" />
+    <Content Include="img\effects_exampls\b3.jpg" />
+    <Content Include="img\effects_exampls\b4.jpg" />
+    <Content Include="img\effects_exampls\b5.jpg" />
+    <Content Include="img\effects_exampls\b6.jpg" />
+    <Content Include="img\effects_exampls\b7.jpg" />
+    <Content Include="img\effects_exampls\b8.jpg" />
+    <Content Include="img\effects_exampls\b9.jpg" />
+    <Content Include="img\effects_exampls\chalkboard.jpg" />
+    <Content Include="img\effects_exampls\chalkboardCol.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq1.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq10.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq11.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq12.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq13.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq14.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq15.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq16.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq17.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq18.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq2.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq3.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq4.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq5.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq6.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq7.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq8.jpg" />
+    <Content Include="img\effects_exampls\clipart\bwsq9.jpg" />
+    <Content Include="img\effects_exampls\clipart\c1.jpg" />
+    <Content Include="img\effects_exampls\clipart\c10.jpg" />
+    <Content Include="img\effects_exampls\clipart\c11.jpg" />
+    <Content Include="img\effects_exampls\clipart\c12.jpg" />
+    <Content Include="img\effects_exampls\clipart\c13.jpg" />
+    <Content Include="img\effects_exampls\clipart\c14.jpg" />
+    <Content Include="img\effects_exampls\clipart\c15.jpg" />
+    <Content Include="img\effects_exampls\clipart\c16.jpg" />
+    <Content Include="img\effects_exampls\clipart\c17.jpg" />
+    <Content Include="img\effects_exampls\clipart\c18.jpg" />
+    <Content Include="img\effects_exampls\clipart\c19.jpg" />
+    <Content Include="img\effects_exampls\clipart\c2.jpg" />
+    <Content Include="img\effects_exampls\clipart\c20.jpg" />
+    <Content Include="img\effects_exampls\clipart\c21.jpg" />
+    <Content Include="img\effects_exampls\clipart\c22.jpg" />
+    <Content Include="img\effects_exampls\clipart\c23.jpg" />
+    <Content Include="img\effects_exampls\clipart\c24.jpg" />
+    <Content Include="img\effects_exampls\clipart\c25.jpg" />
+    <Content Include="img\effects_exampls\clipart\c3.jpg" />
+    <Content Include="img\effects_exampls\clipart\c4.jpg" />
+    <Content Include="img\effects_exampls\clipart\c5.jpg" />
+    <Content Include="img\effects_exampls\clipart\c6.jpg" />
+    <Content Include="img\effects_exampls\clipart\c7.jpg" />
+    <Content Include="img\effects_exampls\clipart\c8.jpg" />
+    <Content Include="img\effects_exampls\clipart\c9.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq1.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq10.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq11.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq12.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq13.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq14.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq15.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq16.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq17.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq18.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq19.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq2.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq20.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq21.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq22.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq23.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq24.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq3.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq4.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq5.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq6.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq7.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq8.jpg" />
+    <Content Include="img\effects_exampls\clipart\colsq9.jpg" />
+    <Content Include="img\effects_exampls\clipart\l1.jpg" />
+    <Content Include="img\effects_exampls\clipart\l10.jpg" />
+    <Content Include="img\effects_exampls\clipart\l11.jpg" />
+    <Content Include="img\effects_exampls\clipart\l12.jpg" />
+    <Content Include="img\effects_exampls\clipart\l13.jpg" />
+    <Content Include="img\effects_exampls\clipart\l14.jpg" />
+    <Content Include="img\effects_exampls\clipart\l15.jpg" />
+    <Content Include="img\effects_exampls\clipart\l16.jpg" />
+    <Content Include="img\effects_exampls\clipart\l17.jpg" />
+    <Content Include="img\effects_exampls\clipart\l18.jpg" />
+    <Content Include="img\effects_exampls\clipart\l2.jpg" />
+    <Content Include="img\effects_exampls\clipart\l20.jpg" />
+    <Content Include="img\effects_exampls\clipart\l21.jpg" />
+    <Content Include="img\effects_exampls\clipart\l22.jpg" />
+    <Content Include="img\effects_exampls\clipart\l23.jpg" />
+    <Content Include="img\effects_exampls\clipart\l24.jpg" />
+    <Content Include="img\effects_exampls\clipart\l25.jpg" />
+    <Content Include="img\effects_exampls\clipart\l26.jpg" />
+    <Content Include="img\effects_exampls\clipart\l3.jpg" />
+    <Content Include="img\effects_exampls\clipart\l4.jpg" />
+    <Content Include="img\effects_exampls\clipart\l5.jpg" />
+    <Content Include="img\effects_exampls\clipart\l6.jpg" />
+    <Content Include="img\effects_exampls\clipart\l7.jpg" />
+    <Content Include="img\effects_exampls\clipart\l9.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW1.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW10.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW11.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW12.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW13.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW14.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW15.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW16.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW17.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW18.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW19.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW2.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW20.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW21.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW22.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW3.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW4.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW5.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW6.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW7.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW8.jpg" />
+    <Content Include="img\effects_exampls\clipart\landBW9.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC1.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC10.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC11.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC12.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC13.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC14.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC15.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC16.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC17.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC18.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC19.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC2.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC20.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC21.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC22.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC23.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC24.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC25.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC26.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC3.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC4.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC5.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC6.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC7.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC8.jpg" />
+    <Content Include="img\effects_exampls\clipart\landC9.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll1.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll10.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll11.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll12.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll13.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll14.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll15.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll16.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll17.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll18.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll19.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll2.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll20.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll21.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll22.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll3.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll4.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll5.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll6.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll7.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll8.jpg" />
+    <Content Include="img\effects_exampls\coll\bwcoll9.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll1.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll10.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll11.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll12.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll13.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll14.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll16.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll17.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll18.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll19.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll2.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll20.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll21.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll22.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll23.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll24.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll3.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll5.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll6.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll7.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll8.jpg" />
+    <Content Include="img\effects_exampls\coll\colcoll9.jpg" />
+    <Content Include="img\effects_exampls\colpencil.jpg" />
+    <Content Include="img\effects_exampls\emboss.jpg" />
+    <Content Include="img\effects_exampls\pencil.jpg" />
+    <Content Include="img\effects_exampls\portBW1.jpg" />
+    <Content Include="img\effects_exampls\portBW10.jpg" />
+    <Content Include="img\effects_exampls\portBW11.jpg" />
+    <Content Include="img\effects_exampls\portBW12.jpg" />
+    <Content Include="img\effects_exampls\portBW13.jpg" />
+    <Content Include="img\effects_exampls\portBW14.jpg" />
+    <Content Include="img\effects_exampls\portBW15.jpg" />
+    <Content Include="img\effects_exampls\portBW16.jpg" />
+    <Content Include="img\effects_exampls\portBW17.jpg" />
+    <Content Include="img\effects_exampls\portBW18.jpg" />
+    <Content Include="img\effects_exampls\portBW19.jpg" />
+    <Content Include="img\effects_exampls\portBW2.jpg" />
+    <Content Include="img\effects_exampls\portBW20.jpg" />
+    <Content Include="img\effects_exampls\portBW21.jpg" />
+    <Content Include="img\effects_exampls\portBW22.jpg" />
+    <Content Include="img\effects_exampls\portBW3.jpg" />
+    <Content Include="img\effects_exampls\portBW4.jpg" />
+    <Content Include="img\effects_exampls\portBW5.jpg" />
+    <Content Include="img\effects_exampls\portBW6.jpg" />
+    <Content Include="img\effects_exampls\portBW7.jpg" />
+    <Content Include="img\effects_exampls\portBW8.jpg" />
+    <Content Include="img\effects_exampls\portBW9.jpg" />
+    <Content Include="img\effects_exampls\portC1.jpg" />
+    <Content Include="img\effects_exampls\portC10.jpg" />
+    <Content Include="img\effects_exampls\portC11.jpg" />
+    <Content Include="img\effects_exampls\portC12.jpg" />
+    <Content Include="img\effects_exampls\portC13.jpg" />
+    <Content Include="img\effects_exampls\portC14.jpg" />
+    <Content Include="img\effects_exampls\portC15.jpg" />
+    <Content Include="img\effects_exampls\portC16.jpg" />
+    <Content Include="img\effects_exampls\portC17.jpg" />
+    <Content Include="img\effects_exampls\portC18.jpg" />
+    <Content Include="img\effects_exampls\portC19.jpg" />
+    <Content Include="img\effects_exampls\portC2.jpg" />
+    <Content Include="img\effects_exampls\portC20.jpg" />
+    <Content Include="img\effects_exampls\portC3.jpg" />
+    <Content Include="img\effects_exampls\portC4.jpg" />
+    <Content Include="img\effects_exampls\portC5.jpg" />
+    <Content Include="img\effects_exampls\portC6.jpg" />
+    <Content Include="img\effects_exampls\portC7.jpg" />
+    <Content Include="img\effects_exampls\portC8.jpg" />
+    <Content Include="img\effects_exampls\portC9.jpg" />
+    <Content Include="img\effects_exampls\t1.jpg" />
+    <Content Include="img\effects_exampls\t10.jpg" />
+    <Content Include="img\effects_exampls\t11.jpg" />
+    <Content Include="img\effects_exampls\t12.jpg" />
+    <Content Include="img\effects_exampls\t13.jpg" />
+    <Content Include="img\effects_exampls\t14.jpg" />
+    <Content Include="img\effects_exampls\t15.jpg" />
+    <Content Include="img\effects_exampls\t16.jpg" />
+    <Content Include="img\effects_exampls\t17.jpg" />
+    <Content Include="img\effects_exampls\t18.jpg" />
+    <Content Include="img\effects_exampls\t19.jpg" />
+    <Content Include="img\effects_exampls\t2.jpg" />
+    <Content Include="img\effects_exampls\t20.jpg" />
+    <Content Include="img\effects_exampls\t21.jpg" />
+    <Content Include="img\effects_exampls\t22.jpg" />
+    <Content Include="img\effects_exampls\t23.jpg" />
+    <Content Include="img\effects_exampls\t24.jpg" />
+    <Content Include="img\effects_exampls\t25.jpg" />
+    <Content Include="img\effects_exampls\t3.jpg" />
+    <Content Include="img\effects_exampls\t4.jpg" />
+    <Content Include="img\effects_exampls\t5.jpg" />
+    <Content Include="img\effects_exampls\t6.jpg" />
+    <Content Include="img\effects_exampls\t7.jpg" />
+    <Content Include="img\effects_exampls\t8.jpg" />
+    <Content Include="img\effects_exampls\t9.jpg" />
+    <Content Include="img\embossFP.jpg" />
+    <Content Include="img\FPBasic1.jpg" />
+    <Content Include="img\FPBasic2.jpg" />
+    <Content Include="img\FPBasic3.jpg" />
+    <Content Include="img\FPBasic4.jpg" />
+    <Content Include="img\FPBokeh1.jpg" />
+    <Content Include="img\FPBokeh2.jpg" />
+    <Content Include="img\FPBokeh3.jpg" />
+    <Content Include="img\FPBokeh4.jpg" />
+    <Content Include="img\FPBorder1.jpg" />
+    <Content Include="img\FPBorder2.jpg" />
+    <Content Include="img\FPBorder3.jpg" />
+    <Content Include="img\FPBorder4.jpg" />
+    <Content Include="img\FPcorner1.jpg" />
+    <Content Include="img\FPCorner2.jpg" />
+    <Content Include="img\FPCorner3.jpg" />
+    <Content Include="img\FPCorner4.jpg" />
+    <Content Include="img\FPFilt1.jpg" />
+    <Content Include="img\FPFilt2.jpg" />
+    <Content Include="img\FPFilt3.jpg" />
+    <Content Include="img\FPFilt4.jpg" />
+    <Content Include="img\FPTex1.jpg" />
+    <Content Include="img\FPTex2.jpg" />
+    <Content Include="img\FPTex3.jpg" />
+    <Content Include="img\FPTex4.jpg" />
+    <Content Include="img\pencilFP.jpg" />
+    <Content Include="img\temp4.jpg" />
+    <Content Include="img\aaa44.jpg" />
+    <Content Include="img\aaa5.jpg" />
+    <Content Include="img\aaa6.jpg" />
+    <Content Include="img\border\bw_sq14.jpg" />
+    <Content Include="img\border\corner1.png" />
+    <Content Include="img\border\border4.png" />
+    <Content Include="img\border\border1.png" />
+    <Content Include="img\border\border11.jpg" />
+    <Content Include="img\border\border2.png" />
+    <Content Include="img\border\border3.jpg" />
+    <Content Include="img\border\border5.jpg" />
+    <Content Include="img\border\9.png" />
+    <Content Include="img\c1.jpg" />
+    <Content Include="img\c2.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq2.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq5.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq6.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq4.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq3.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq7.png" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq9.jpg" />
+    <Content Include="img\clipart\bwframe_sq\bw_sq10.jpg" />
+    <Content Include="img\DSC_1034.jpg" />
+    <Content Include="img\effects\bokeh\b1.jpg" />
+    <Content Include="img\effects\bokeh\b2.jpg" />
+    <Content Include="img\effects\BW\Perspective Mesh Contrast.jpg" />
+    <Content Include="img\effects\BW\Perspective Mesh light.jpg" />
+    <Content Include="img\effects\light\1111.jpg" />
+    <Content Include="img\effects\light\2512.jpg" />
+    <Content Include="img\effects\light\3161.jpg" />
+    <Content Include="img\effects\light\depositphotos_162895848-stock-video-blue-light-rays-background.jpg" />
+    <Content Include="img\effects\light\depositphotos_194128316-stock-video-heaven-light-rays-from-above.jpg" />
+    <Content Include="img\effects\light\download %286%29.jpg" />
+    <Content Include="img\effects\light\sun_light_background_vector_529887.jpg" />
+    <Content Include="img\effects\light\tydob-qa-693x991.jpg" />
+    <Content Include="img\effects\multi\m10.jpg" />
+    <Content Include="img\effects\multi\m8.jpg" />
+    <Content Include="img\effects\multi\m3.jpg" />
+    <Content Include="img\effects\multi\m7.jpg" />
+    <Content Include="img\effects\multi\m4.jpg" />
+    <Content Include="img\effects\multi\m5.jpg" />
+    <Content Include="img\effects\multi\m6.jpg" />
+    <Content Include="img\effects\multi\m2.jpg" />
+    <Content Include="img\effects\multi\m9.jpg" />
+    <Content Include="img\effects\multi\m1.png" />
+    <Content Include="img\effects_exampls\classic_1977.jpg" />
+    <Content Include="img\effects_exampls\classic_amaro.jpg" />
+    <Content Include="img\effects_exampls\classic_brannan.jpg" />
+    <Content Include="img\effects_exampls\classic_earlybird.jpg" />
+    <Content Include="img\effects_exampls\classic_inkwell.jpg" />
+    <Content Include="img\effects_exampls\classic_kelvin.jpg" />
+    <Content Include="img\effects_exampls\classic_lofi.jpg" />
+    <Content Include="img\effects_exampls\classic_nashville.jpg" />
+    <Content Include="img\effects_exampls\classic_sutro.jpg" />
+    <Content Include="img\effects_exampls\classic_toaster.jpg" />
+    <Content Include="img\effects_exampls\multi10a.jpg" />
+    <Content Include="img\effects_exampls\multi10c.jpg" />
+    <Content Include="img\effects_exampls\multi1a.jpg" />
+    <Content Include="img\effects_exampls\multi1b.jpg" />
+    <Content Include="img\effects_exampls\multi1c.jpg" />
+    <Content Include="img\effects_exampls\multi2a.jpg" />
+    <Content Include="img\effects_exampls\multi2c.jpg" />
+    <Content Include="img\effects_exampls\multi6a.jpg" />
+    <Content Include="img\effects_exampls\multi6c.jpg" />
+    <Content Include="img\effects_exampls\multi7a.jpg" />
+    <Content Include="img\effects_exampls\multi8c.jpg" />
+    <Content Include="img\effects_exampls\multi9a.jpg" />
+    <Content Include="img\p2.jpg" />
+    <Content Include="img\temp1.JPG" />
+    <Content Include="img\temp2.JPG" />
+    <Content Include="img\temp3.JPG" />
+    <Content Include="img\work\FPt11.jpg" />
+    <Content Include="img\work\FPt12.jpg" />
+    <Content Include="img\work\FPt13.jpg" />
+    <Content Include="img\work\FPt21.jpg" />
+    <Content Include="img\work\FPt22.jpg" />
+    <Content Include="img\work\FPt23.jpg" />
+    <Content Include="img\work\FPt31.jpg" />
+    <Content Include="img\work\FPt32.jpg" />
+    <Content Include="img\work\FPt33.jpg" />
+    <Content Include="jquery\jquery-ui.css" />
+    <Content Include="js\html2canvas.js" />
+    <Content Include="js\html2canvas.min.js" />
+    <Content Include="js\html2canvas.svg.js" />
+    <Content Include="js\html2canvas.svg.min.js" />
+    <Content Include="js\JavaScriptHome.js" />
+    <Content Include="js\JavaScriptIMG.js" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\home.css" />
+    <Content Include="home.html" />
+    <Content Include="js\JavaScript.js" />
+    <Content Include="photoeditor.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52566</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52566/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

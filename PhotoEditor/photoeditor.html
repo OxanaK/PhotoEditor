@@ -1,0 +1,1925 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+    <script src="js/JavaScriptIMG.js"></script>
+    <link href="css/photoeditor.css" rel="stylesheet" />
+
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+          rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="js/html2canvas.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--font-family: 'Roboto', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--font-family: 'Lato', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <!--font-family: 'Dosis', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!--font-family: 'Oswald', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <!--font-family: 'Josefin Sans', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <!--font-family: 'Orbitron', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <!--font-family: 'Allerta Stencil', sans-serif;-->
+
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <!--font-family: 'Srisakdi', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!--font-family: 'Pacifico', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!--font-family: 'Dancing Script', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <!--font-family: 'Shadows Into Light', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <!--font-family: 'Indie Flower', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <!--font-family: 'Monoton', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <!--font-family: 'Audiowide', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <!--font-family: 'Press Start 2P', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Sirin+Stencil" rel="stylesheet">
+    <!--font-family: 'Sirin Stencil', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Smokum" rel="stylesheet">
+    <!--font-family: 'Smokum', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie" rel="stylesheet">
+    <!--font-family: 'Ruge Boogie', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+    <!--font-family: 'Londrina Shadow', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
+    <!--font-family: 'Libre Barcode 39 Text', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+    <!--font-family: 'Bungee Hairline', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Bonbon" rel="stylesheet">
+    <!--font-family: 'Bonbon', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Hanalei" rel="stylesheet">
+    <!--font-family: 'Hanalei', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Butcherman" rel="stylesheet">
+    <!--font-family: 'Butcherman', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Smokum" rel="stylesheet">
+    <!--font-family: 'Smokum', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Piedra" rel="stylesheet">
+    <!--font-family: 'Piedra', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+    <!--font-family: 'Bungee Outline', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Arbutus" rel="stylesheet">
+    <!--font-family: 'Arbutus', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing" rel="stylesheet">
+    <!--font-family: 'Caesar Dressing', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <!--font-family: 'Ewert', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Flavors" rel="stylesheet">
+    <!--font-family: 'Flavors', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+    <!--font-family: 'Barrio', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Monofett" rel="stylesheet">
+    <!--font-family: 'Monofett', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
+    <!--font-family: 'Griffy', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+    <!--font-family: 'Eater', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet">
+    <!--font-family: 'Kranky', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
+    <!--font-family: 'Finger Paint', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+    <!--font-family: 'Codystar', cursive;-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    <!--font-family: 'Laila', serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <!--font-family: 'Merriweather', serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <!--font-family: 'Noto Serif', serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+    <!--font-family: 'Crimson Text', serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+    <!--font-family: 'Ultra', serif;-->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      
+    
+
+</head>
+
+<body>
+    <div id="menu_wrapper">
+
+        <div id="id_t"> Online Photo Editor</div>
+        <div id="menu">
+            <div class="menu_top_design" id="to_home"><a href="home.html">Home</a></div>
+            <div class="menu_top_design" id="to_demo"><a href="home.html">Demo</a></div>
+            <div class="menu_top_design" id="to_gallery"><a href="#demo">Gallery</a></div>
+            <div class="menu_top_design" id="to_help"><a href="home.html">Help</a></div>
+
+        </div>
+    </div>
+    <hr>
+    <div id="wrapper" class="color_gray3">
+        <div id="horizontal_menu" class="color_gray1">
+            <div id="to_upload" class="butt_design">
+                Upload an image:
+              
+                <input type="file" name="upload-img" id="upload-img" onchange="handleFiles(this.files)">
+               </div>
+
+            <div id="to_original" class="butt_design">
+                <!--Original-->  
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/new.png">
+            </div>
+
+            <div id="to_back" class="butt_design">
+                <!--Back-->  
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/left.png">
+            </div>
+
+            <div id="to_save" class="butt_design">
+                <!--Save-->
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/save.png">
+            </div>
+
+            <div id="to_email" class="butt_design">
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/send.png">
+                <!--Email--> 
+            </div>
+
+            <div id="to_print" class="butt_design">
+                <!--Print-->    
+                <img src="https://img.icons8.com/ios-glyphs/30/000000/print.png">       
+            </div>
+            <div id="cocial_bar" class="icon-bar">
+                <a href="https://www.facebook.com/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://google.com/" target="_blank" class="google"><i class="fa fa-google"></i></a>
+                <a href="https://www.linkedin.com/company/hcl-technologies/jobs/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          
+        </div>
+        <hr />
+        <div id="vertical_menu" >
+            <div id="col_1" class="color_gray1">
+                <input type="radio" name="nemu_choice" id="m_1" hidden />
+                <label class="menu_design" for="m_1">Basic</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_2" hidden />
+                <label class="menu_design" for="m_2">Rotate</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_4" hidden />
+                <label class="menu_design" for="m_4">Flip</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_3" hidden />
+                <label class="menu_design" for="m_3">Resize</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_11" hidden />
+                <label class="menu_design" for="m_11">Filters</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_10" hidden />
+                <label class="menu_design" for="m_10">Effects</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_6" hidden />
+                <label class="menu_design" for="m_6">Frames</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_5" hidden />
+                <label class="menu_design" for="m_5">ClipArt</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_7" hidden />
+                <label class="menu_design" for="m_7">Meme</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_8" hidden />
+                <label class="menu_design" for="m_8">Stickers</label> <br /><br />
+
+                <input type="radio" name="nemu_choice" id="m_9" hidden />
+                <label class="menu_design" for="m_9">Collage</label> <br /><br />
+
+                
+
+            </div>
+            <div id="col_2" class="color_gray2">
+
+                <!--Basic-->
+                <div class="types_change hidden color_gray2" id="basic">
+
+                    <div class="like_h2">Basic:</div>
+                    <table>
+                        <tr>
+                            <td><div class="range">
+                                <label class="design_label">Contrast: </label>
+                               </div>
+                            </td>
+                            <td><input type="range" min="0" max="100" step="10" value="0" id="contrast_range" class="all_range"></td>
+                        </tr>
+
+                        <tr>
+                            <td><div class="range">
+                                   <label class="design_label">Saturate: </label>
+                               </div>
+                            </td>
+                            <td><input type="range" min="0" max="100" step="10" value="0" id="saturate_range" class="all_range"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="range">
+                                    <label class="design_label">Brightness: </label>
+                                </div>
+                            </td>
+                            <td> <input type="range" min="0" max="100" step="10" value="0" id="brightness_range" class="all_range"></td>
+                        </tr>
+                        <tr>
+                            <td><div class="range">
+                                    <label class="design_label">Sepia: </label>
+                                </div>
+                            </td>
+                            <td> <input type="range" min="0" max="100" step="10" value="0" id="sepia_range" class="all_range"></td>
+                        </tr>
+
+                        <tr>
+                            <td><div class="range">
+                                    <label class="design_label">Blur: </label>
+                                </div>
+                            </td>
+                            <td> <input type="range" min="0" max="10" step="1px" value="0" id="blur_range" class="all_range"></td>
+                        </tr>
+                        <tr>
+                            <td><div class="range">
+                                    <label class="design_label">Grayscale: </label>
+                                </div>
+                            </td>
+                            <td> <input type="range" min="0" max="100" step="10" value="0" id="grayscale_range" class="all_range"></td>
+                        </tr>
+
+                        <tr>
+                            <td><div class="range">
+                                    <label class="design_label">Invert: </label>
+                                </div>
+                            </td>
+                            <td> <input type="range" min="0" max="100" step="10" value="0" id="invert_range" class="all_range"></td>
+                        </tr>
+                        <tr>
+                           
+                            <td><div class="range">
+                                    <label class="design_label">Hue-rotate: </label>
+                                </div>
+                            </td>
+
+                            <td> <input type="range" min="0" max="359" step="10" value="0" id="hue_range" class="all_range">
+                            </td>
+                        </tr>
+
+                        <tr>
+                        <td><div class="range">
+                                <label class="design_label">Noise: </label>
+                            </div>
+                        </td>
+                        <td> <input type="range" min="-100" max="100" step="5" value="0" id="noise_range" class="all_range"></td>
+                        </tr>
+
+                        <tr>
+                            <td> <div class="range">
+                                    <label class="design_label">Night vision:</label>
+                                </div>
+                            </td>
+                            <td> <input type="range" min="0" max="2.55" step="0.1" value="0" id="night_vision_range" class="all_range"></td>
+                        </tr>
+                        <tr>
+</table>
+
+                   
+                    
+
+                    <div id="save_cancel_basic" class="save_cancel">
+                        <button id="save_basic" class="button_design">Save</button>
+                        &nbsp;
+                        <button id="cancel_basic" class="button_design">Cancel</button>
+                    </div>
+
+                </div>
+                <!--Rotate-->
+                <div class="types_change hidden color_gray2" id="rotate">
+
+                    <div class="like_h2">Rotate:</div>
+
+
+                    <div class="range make_center">
+
+                        <div id="left_rotate_div"> <button id="left_rotate_button" class="button_design button_choice"><abbr title="left"><img src="https://img.icons8.com/material/30/000000/rotate-page-counterclockwise.png"></abbr></button></div>
+
+                        <div id="right_rotate_div"><button id="right_rotate_button" class="button_design button_choice"><abbr title="right"><img src="https://img.icons8.com/material/30/000000/rotate-page-clockwise.png"></abbr></button></div>
+
+                    </div>
+
+                    <div id="save_cancel_rotate" class="save_cancel">
+                        <button id="save_rotate" class="button_design">Save</button>
+                        &nbsp;
+                        <button id="cancel_rotate" class="button_design">Cancel</button>
+                    </div>
+
+                </div>
+                <!--Resize-->
+                <div class="types_change hidden color_gray2" id="resize">
+                    <div class="like_h2">Resize:</div>
+
+                    <div class="range">
+                        <label class="design_label">Reduce:</label>
+                        <input type="text" id="reduce_rangeInput" class="all_text_range" value="0">
+                        <label class="label_demention"> %</label>
+                        <br />
+                        <input type="range" min="0" max="1" step="0.1" value="0" id="reduce_range" class="all_range">
+
+                    </div>
+
+                    <div class="range">
+                        <label class="design_label">Increase:</label>
+                        <input type="text" id="increase_rangeInput" class="all_text_range" value="0">
+                        <label class="label_demention"> %</label>
+                        <br />
+                        <input type="range" min="1" max="2" step="0.1" value="0" id="increase_range" class="all_range">
+
+                    </div>
+
+                    <div class="range">
+                        <!--<button id="left_rotate_button" class="button_design">Left</button>
+
+                <button id="right_rotate_button" class="button_design">Right</button>-->
+                    </div>
+
+                    <div id="save_cancel_resize" class="save_cancel">
+                        <button id="save_resize" class="button_design">Save</button>
+                        &nbsp;
+                        <button id="cancel_resize" class="button_design">Cancel</button>
+                    </div>
+
+                </div>
+                <!--Flip-->
+                <div class="types_change hidden color_gray2" id="flip">
+
+                    <div class="like_h2">Flip:</div>
+
+                    <div class="range">
+                        <div id="flip_h" class="flip_div">
+                            <button id="h_flip_button" class="button_design button_choice"><abbr title="horizontal flip"><img src="https://img.icons8.com/material/30/000000/flip-horizontal.png"></abbr></button>
+                        </div>
+                        <div class="flip_div">
+                            <button id="v_flip_button" class="button_design button_choice"><abbr title="vertical flip"><img src="https://img.icons8.com/material-outlined/30/000000/flip-vertical.png"></abbr></button>
+                        </div>
+                    </div>
+
+                    <div id="save_cancel_flip" class="save_cancel">
+                        <button id="save_flip" class="button_design">Save</button>
+                        &nbsp;
+                        <button id="cancel_flip" class="button_design">Cancel</button>
+                    </div>
+
+                </div>
+                <!--Filters-->
+                <div class="types_change hidden color_gray2" id="filter">
+
+                    <div class="like_h2">Filters: </div>
+                    <div>
+
+                        <div id="filter_classic" class="range effect">
+                            <label class="design_label">Classic  </label><i class="fa fa-caret-down"></i>
+
+                        </div>
+
+                        <div id="filter_classic_container" class="hidden effects_container">
+                       <div id="classic_3d" class="range range_example"><img class="example_img" src="img/effects_exampls/" /> <div class="exampl_span"> 3D</div></div>
+                        <div id="classic_vintage" class="range range_example"><img class="example_img" src="img/effects_exampls/" /> <div class="exampl_span"> Vintage</div></div>
+                       <div id="classic_night" class="range range_example"><img class="example_img" src="img/effects_exampls/" /> <div class="exampl_span"> Night vision</div></div>
+                       <div id="classic_old_photo" class="range range_example"><img class="example_img" src="img/effects_exampls/" /> <div class="exampl_span"> Old photo</div></div>
+                       <div id="classic_light_edge" class="range range_example"><img class="example_img" src="img/effects_exampls/" /> <div class="exampl_span"> Light edge</div></div>
+                       <div id="classic_dark_edge" class="range range_example"><img class="example_img" src="img/effects_exampls/" /> <div class="exampl_span"> Dark edge</div></div>
+               
+
+                        </div>
+                    </div>
+                    <div id="filter_popular" class="range effect">
+                        <label class="design_label">Popular  </label><i class="fa fa-caret-down"></i>
+
+                    </div>
+
+                    <div id="filter_popular_container" class="hidden effects_container">
+       
+                        <!--sepia(0.4) saturate(1.5) contrast(0.9) brightness(1.1) hue-rotate(-15deg);-->
+                        <div id="classic_nashville" class="range range_example" data-number="4" data-1="sepia(0.4)" data-2="contrast(0.9)" data-3="brightness(1.1)" data-4="hue-rotate(-15deg)"><img class="example_img" src="img/effects_exampls/classic_nashville.jpg" /> <div class="exampl_span"> Nashville</div></div>
+                        <!--filter:sepia(0.4) saturate(2.5) hue-rotate(-30deg) contrast(0.67);-->
+                        <div id="classic_toaster" class="range range_example" data-number="4" data-1="sepia(0.4)" data-2="saturate(2.5)" data-3="hue-rotate(-30deg)" data-4="contrast(0.67)"><img class="example_img" src="img/effects_exampls/classic_toaster.jpg" /> <div class="exampl_span"> Toaster</div></div>
+                        <!--filter: brightness(0.75) contrast(1.3) sepia(0.5) hue-rotate(-25deg);-->
+                        <div id="classic_sutro" class="range range_example" data-number="4" data-1="brightness(0.75)" data-2="contrast(1.3)" data-3="sepia(0.5)" data-4="hue-rotate(-25deg)"><img class="example_img" src="img/effects_exampls/classic_sutro.jpg" /> <div class="exampl_span"> Sutro</div></div>
+                        <!--filter: contrast(1.4) brightness(0.9) sepia(0.05);-->
+                        <div id="classic_lo_fi" class="range range_example" data-number="3" data-1="contrast(1.4)" data-2="brightness(0.9)" data-3="sepia(0.05)"><img class="example_img" src="img/effects_exampls/classic_lofi.jpg" /> <div class="exampl_span"> Lo-Fi</div></div>
+                        <!--filter: sepia(0.4) saturate(2.4) brightness(1.3) contrast(1);-->
+                        <div id="classic_kelvin" class="range range_example" data-number="4" data-1="sepia(0.4)" data-2="saturate(2.4)" data-3="brightness(1.3)" data-4="contrast(1)"><img class="example_img" src="img/effects_exampls/classic_kelvin.jpg" /> <div class="exampl_span"> Kelvin</></div></div>
+                        <!--filter: hue-rotate(-10deg) contrast(0.9) brightness(1.1) saturate(1.5);-->
+                        <div id="classic_amaro" class="range range_example" data-number="4" data-1="hue-rotate(-10deg)" data-2="contrast(0.9)" data-3="brightness(1.1)" data-4="saturate(1.5)"><img class="example_img" src="img/effects_exampls/classic_amaro.jpg" /> <div class="exampl_span"> Amaro</div></div>
+                        <div id="classic_1977" class="range range_example" data-number="4" data-1="sepia(0.5)" data-2="hue-rotate(-30deg)" data-3="saturate(1.2)" data-4="contrast(0.8)"><img class="example_img" src="img/effects_exampls/classic_1977.jpg" /> <div class="exampl_span"> 1977</div></div>
+                        <!--filter: sepia(0.4) saturate(1.6) contrast(1.1) brightness(0.9) hue-rotate(-10deg);-->
+                        <div id="classic_earlybird" class="range range_example" data-number="5" data-1="sepia(0.4)" data-2="saturate(1.6)" data-3="contrast(1.1)" data-4="brightness(0.9)" data-5="hue-rotate(-10deg)"><img class="example_img" src="img/effects_exampls/classic_earlybird.jpg" /> <div class="exampl_span"> Earlybird</div></div>
+                        <!--filter: grayscale(1) brightness(1.2) contrast(1.05);-->
+                        <div id="classic_inkwell" class="range range_example" data-number="3" data-1="grayscale(1)" data-2="brightness(1.2)" data-3="contrast(1.05)"><img class="example_img" src="img/effects_exampls/classic_inkwell.jpg" /> <div class="exampl_span"> Inkwell</div></div>
+                        <!--filter: sepia(0.5) contrast(1.4);-->
+                        <div id="classic_brannan" class="range range_example" data-number="2" data-1="sepia(0.5)" data-2="contrast(1.4)"><img class="example_img" src="img/effects_exampls/classic_brannan.jpg" /> <div class="exampl_span"> Brannan</div></div>
+
+
+
+                    </div>
+
+
+                    <div id="save_cancel_rotate" class="save_cancel">
+                        <button id="save_rotate" class="button_design">Save</button>
+                        &nbsp;
+                        <button id="cancel_rotate" class="button_design">Cancel</button>
+                    </div>
+                </div>
+    
+
+                    <!--Clipart-->
+                    <div class="types_change hidden color_gray2" id="clipart">
+
+                        <div class="like_h2">ClipArt: </div>
+                        <div>
+                            <div id="bordures_clipart" class="range effect">
+                                <label class="design_label">Bordures: </label><i class="fa fa-caret-down"></i>
+
+                            </div>
+
+                                <div id="bordures_clipart_forall_container" class="hidden">
+                                                          
+                       
+                                <div id="bordures_clipart_container">
+                                    <div id="ex_corners">
+                                        <div id="bordure_ex_1" class="exampl_corner"> 1</div>
+                                        <div id="bordure_ex_2" class="exampl_corner"> 2</div>
+                                        <div id="bordure_ex_3" class="exampl_corner"> 3</div>
+                                        <div id="bordure_ex_4" class="exampl_corner"> 4</div>
+                                    </div>
+                                
+                                    <div id="all_lines">
+                                       
+                                        <div class="bord" id="bordure_1"> 1:<input type="checkbox" id="bordure_radio1" /> <input type="range" min="0" max="100" step="0.5" value="100" id="bordureSize_1" class="all_rangeB"></div>
+                                        <div class="bord" id="bordure_2"> 2:<input type="checkbox" id="bordure_radio2" /> <input type="range" min="0" max="100" step="0.5" value="100" id="bordureSize_2" class="all_rangeB"></div>
+                                        <div class="bord" id="bordure_3"> 3:<input type="checkbox" id="bordure_radio3" /> <input type="range" min="0" max="100" step="0.5" value="100" id="bordureSize_3" class="all_rangeB"></div>
+                                        <div class="bord" id="bordure_4"> 4:<input type="checkbox" id="bordure_radio4" /> <input type="range" min="0" max="100" step="0.5" value="100" id="bordureSize_4" class="all_rangeB"></div>
+                                    </div>
+                                </div>
+                                <div id="bordures_container" class="effects_container">
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord1.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/clipart/l1.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord2.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/clipart/l2.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord3.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/clipart/l3.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord4.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/clipart/l4.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord5.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/clipart/l5.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord6.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/clipart/l6.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord7.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/clipart/l7.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord8.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/clipart/l8.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord9.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/clipart/l9.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord10.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/clipart/l10.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord11.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/clipart/l11.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord12.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/clipart/l12.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord13.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/clipart/l13.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord14.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/clipart/l14.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord15.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/clipart/l15.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord16.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/clipart/l16.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord17.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/clipart/l17.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord18.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/clipart/l18.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord19.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/clipart/l19.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord20.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/clipart/l20.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord21.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="img/effects_exampls/clipart/l21.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord22.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="img/effects_exampls/clipart/l22.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord23.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 23.</span> <img class="example_img1" src="img/effects_exampls/clipart/l23.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord24.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 24.</span> <img class="example_img1" src="img/effects_exampls/clipart/l24.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord25.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 25.</span> <img class="example_img1" src="img/effects_exampls/clipart/l25.jpg" /> </div>
+                                    <div class="range range_example" data-line_img="url(/img/clipart/bordure/bord26.png)" data-background-blend-mode="normal"><span class="exampl_span3"> 26.</span> <img class="example_img1" src="img/effects_exampls/clipart/l26.jpg" /> </div>
+                                  
+
+                                </div>
+                            </div>
+                            <hr id="hrBorder" class="hidden" />
+                        </div>
+                   
+                        <div>
+                            <div id="corners_clipart" class="range effect">
+                                <label class="design_label">Corners: </label><i class="fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div id="corners_clipart_forall_container" class="hidden">
+                                <div id="corners_clipart_container">
+                                    <div id="ex_corners">
+                                        <div id="corner_ex_1" class="exampl_corner"> 1</div>
+                                        <div id="corner_ex_2" class="exampl_corner"> 2</div>
+                                        <div id="corner_ex_3" class="exampl_corner"> 3</div>
+                                        <div id="corner_ex_4" class="exampl_corner"> 4</div>
+                                    </div>
+                                    <div id="all_corners">
+
+                                        <div class="corners" id="corner_1"> 1: <input type="checkbox"  class="corner_radio" id="corner_radio1" /></div>
+                                        <div class="corners" id="corner_2"> 2: <input type="checkbox" class="corner_radio" id="corner_radio2" /></div>
+                                        <div class="corners" id="corner_3"> 3: <input type="checkbox" class="corner_radio" id="corner_radio3" /></div>
+                                        <div class="corners" id="corner_4"> 4: <input type="checkbox" class="corner_radio" id="corner_radio4" /></div>
+                                    </div>
+                                </div>
+                                <div id="corner_container" class="effects_container">
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner1.png)"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c1.jpg" /></div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner2.png)"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c2.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner3.png)"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c3.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner4.png)"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c4.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner5.png)"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c5.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner6.png)"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c6.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner7.png)"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c7.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner8.png)"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c8.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner9.png)"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c9.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner10.png)"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c10.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner11.png)"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c11.jpg" /> </div>
+
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner12.png)"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c12.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner13.png)"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c13.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner14.png)"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c14.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner15.png)"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c15.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner16.png)"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c16.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner17.png)"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c17.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner18.png)"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c18.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner19.png)"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c19.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner20.png)"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c20.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner21.png)"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c21.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner22.png)"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c22.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner23.png)"><span class="exampl_span3"> 23.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c23.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner24.png)"><span class="exampl_span3"> 24.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c24.jpg" /> </div>
+                                    <div class="range range_example" data-corner_img="url(/img/clipart/corners/corner25.png)"><span class="exampl_span3"> 25.</span> <img class="example_img1" src="/img/effects_exampls/clipart/c25.jpg" /> </div>
+
+                                </div>
+
+                            </div>
+                            <hr id="hrCorner" class="hidden" />
+                        </div>
+                        <div>
+                            <div id="sq_frames_clipart" class="range effect">
+                                <label class="design_label">Square frames: </label><i class="fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div>
+
+                                <div id="bw_frames_sq_clipart" class="range effect  hidden">
+                                    <hr />
+                                    <label class="design_label">B&W: </label><i class="fa fa-caret-down"></i>
+
+                                </div>
+
+                                <div id="bw_frames_sq_container" class="hidden effects_container">
+                                    <div id="bw_sq1" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq1.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq1.jpg" /> </div>
+                                    <div id="bw_sq2" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq2.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq2.jpg" /> </div>
+                                    <div id="bw_sq3" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq3.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq3.jpg" /> </div>
+                                    <div id="bw_sq4" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq4.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq4.jpg" /> </div>
+                                    <div id="bw_sq5" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq5.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq5.jpg" /> </div>
+                                    <div id="bw_sq6" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq6.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq6.jpg" /> </div>
+                                    <div id="bw_sq7" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq7.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq7.jpg" /> </div>
+                                    <div id="bw_sq8" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq8.jpg" /> </div>
+                                    <div id="bw_sq9" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq9.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq9.jpg" /> </div>
+
+                                    <div id="bw_sq10" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq10.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq10.jpg" /> </div>
+                                    <div id="bw_sq11" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq11.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq11.jpg" /> </div>
+                                    <div id="bw_sq12" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq12.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq12.jpg" /> </div>
+                                    <div id="bw_sq13" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq13.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq13.jpg" /> </div>
+                                    <div id="bw_sq14" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq14.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq14.jpg" /> </div>
+                                    <div id="bw_sq15" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq15.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq15.jpg" /> </div>
+                                    <div id="bw_sq16" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq16.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq16.jpg" /> </div>
+                                    <div id="bw_sq17" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq17.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq17.jpg" /> </div>
+                                    <div id="bw_sq18" class="range range_example" data-first="url(/img/clipart/bwframe_sq/bw_sq18.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/clipart/bwsq18.jpg" /> </div>
+
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div id="colored_sq_frames_clipart" class="range effect hidden">
+                                    <label class="design_label">Colored: </label><i class="fa fa-caret-down"></i>
+
+                                </div>
+
+                                <div id="colored_sq_frames_container" class="hidden effects_container">
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/1.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq1.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/2.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq2.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/3.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq3.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/4.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq4.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/5.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq5.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/13.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq6.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/6.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq7.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/7.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq8.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq9.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/9.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq10.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/10.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq11.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/11.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq12.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/12.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 13</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq13.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/14.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 14</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq14.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/15.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq15.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/16.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq16.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/17.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq17.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/18.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq18.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/19.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq19.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/20.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq20.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/21.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq21.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/22.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq22.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/23.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 23.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq23.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/coloredframe_sq/24.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 24.</span> <img class="example_img1" src="img/effects_exampls/clipart/colsq24.jpg" /> </div>
+                                </div>
+
+                            </div>
+                            <hr id="hrSquare" class="hidden" />
+                        </div>
+
+
+                        <div>
+
+                            <div id="landscape_frames_clipart" class="range effect">
+                                <label class="design_label">Landscape frames: </label><i class="fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div>
+
+                                <div id="bw_frames_landscape_clipart" class="range effect  hidden">
+                                    <hr />
+                                    <label class="design_label">B&W: </label><i class="fa fa-caret-down"></i>
+
+                                </div>
+
+                                <div id="bw_frames_landscape_container" class="hidden effects_container">
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW1.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW1.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW2.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW2.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW3.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW3.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW4.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW4.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW5.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW5.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW6.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW6.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW7.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW7.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW8.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW9.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW9.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW10.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW10.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW11.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW11.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW12.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW12.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW13.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW13.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW14.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW14.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW15.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW15.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW16.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW16.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW17.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW17.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW18.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW18.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW19.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW19.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW20.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW20.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW21.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW21.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/bw/landBW22.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="img/effects_exampls/clipart/landBW22.jpg" /> </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div id="colored_frames_landscape_clipart" class="range effect hidden">
+                                    <label class="design_label">Colored: </label><i class="fa fa-caret-down"></i>
+
+                                </div>
+
+                                <div id="colored_frames_landscape_container" class="hidden effects_container">
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL1.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC1.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL2.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC2.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL3.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC3.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL4.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC4.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL5.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC5.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL6.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC6.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL7.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC7.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC8.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL9.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC9.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL10.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC10.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL11.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC11.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL12.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC12.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL13.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC13.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL14.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC14.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL15.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC15.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL16.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC16.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL17.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC17.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL18.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC18.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL19.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC19.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL20.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC20.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL21.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC21.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL22.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC22.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL23.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 23.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC23.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL24.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 24.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC24.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL25.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 25.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC25.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/land/col/landCOL26.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 26.</span> <img class="example_img1" src="img/effects_exampls/clipart/landC26.jpg" /> </div>
+                                </div>
+
+                            </div>
+                          
+                        </div>
+                     
+                
+                <hr id="hrLandscape" class="hidden" />
+                        <div>
+                            <div id="portrait_frames_clipart" class="range effect">
+                                <label class="design_label">Portrait frames: </label><i class="fa fa-caret-down"></i>
+
+                            </div>
+
+                            <div>
+
+                                <div id="bw_frames_portrait_clipart" class="range effect  hidden">
+                                    <hr />
+                                    <label class="design_label">B&W: </label><i class="fa fa-caret-down"></i>
+
+                                </div>
+
+                                <div id="bw_frames_portrait_container" class="hidden effects_container">
+                                    <div   class="range range_example" data-first="url(/img/clipart/port/bw/portBW1.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/portBW1.jpg" /> </div>
+                                    <div  class="range range_example" data-first="url(/img/clipart/port/bw/portBW2.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/portBW2.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW3.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 3.</span>  <img class="example_img1" src="img/effects_exampls/portBW3.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW4.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/portBW4.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW5.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/portBW5.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW6.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/portBW6.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW7.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/portBW7.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/portBW8.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW9.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/portBW9.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW10.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/portBW10.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW11.jpeg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/portBW11.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW12.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/portBW12.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW13.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/portBW13.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW14.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/portBW14.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW15.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/portBW15.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW16.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/portBW16.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW17.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/portBW17.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW18.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/portBW18.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW19.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/portBW19.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW20.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/portBW20.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW21.png)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="img/effects_exampls/portBW21.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/bw/portBW22.jpg)" data-second="myPhoto" data-background-blend-mode="darken"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="img/effects_exampls/portBW22.jpg" /> </div>
+                                    
+
+
+                                </div>
+                            </div>
+
+                            <div>
+                                <div id="colored_frames_portrait_clipart" class="range effect hidden">
+                                    <label class="design_label">Colored: </label><i class="fa fa-caret-down"></i>
+
+                                </div>
+
+                                <div id="colored_frames_portrait_container" class="hidden effects_container">
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL1.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/portC1.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL2.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/portC2.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL3.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/portC3.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL4.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/portC4.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL5.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/portC5.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL6.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/portC6.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL7.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/portC7.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/portC8.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL9.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/portC9.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL10.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/portC10.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL11.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/portC11.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL12.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/portC12.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL13.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/portC13.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL14.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/portC14.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL15.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/portC15.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL16.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/portC16.jpg" /> </div>
+
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL17.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/portC17.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL18.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/portC18.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL19.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/portC19.jpg" /> </div>
+                                    <div class="range range_example" data-first="url(/img/clipart/port/col/portCOL20.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/portC20.jpg" /> </div>
+                                </div>
+                             
+                            </div>
+                            <hr id="hrPortrait" class="hidden" />     
+                        </div>
+                
+                        <div id="save_cancel_filter" class="save_cancel">
+                            <button id="save_filter" class="button_design">Save</button>
+                            &nbsp;
+                            <button id="cancel_filter" class="button_design">Cancel</button>
+                        </div>
+
+                    </div>
+
+                    <!--Effects-->
+                    <div class="types_change hidden color_gray2" id="effects">
+
+                        <div class="like_h2">Effects:</div>
+
+
+
+                        <div>
+                            <div id="effects_drawing" class="range">
+                                <label class="design_label">Artsy </label><i class="fa fa-caret-down"></i>
+                            </div>
+                            <div id="effects_drawing_container" class="hidden effects_container">
+                                <div id="pancil" class="range range_example"><img class="example_img" src="img/effects_exampls/pencil.jpg" /><div class="exampl_span"> Pencil</div></div>
+                                <div id="colored_pancil" class="range range_example"><img class="example_img" src="img/effects_exampls/colpencil.jpg" /><div class="exampl_span"> Colored pencil</div></div>
+                                
+                                 <div id="emboss" class="range range_example"><img class="example_img" src="img/effects_exampls/emboss.jpg" /><div class="exampl_span"> Emboss</div></div>
+                                <div id="chaclkbord" class="range range_example"><img class="example_img" src="img/effects_exampls/chalkboard.jpg" /><div class="exampl_span"> Chalkbord </div></div>
+                                <div id="colored_chackbord" class="range range_example"><img class="example_img" src="img/effects_exampls/chalkboardCol.jpg" /><div class="exampl_span">Colored chalkboard</div></div>
+                                <!--<div id="watercolor" class="range range_example"><img class="example_img" src="img/effects_exampls/" /><div class="exampl_span"> Watercolor</div></div>-->
+                            </div>
+                        </div>
+                        
+
+                        <div>
+                            <div id="effects_bokeh" class="range">
+                                <label class="design_label">Bokeh </label><i class="fa fa-caret-down"></i>
+                            </div>
+
+                            <div id="effects_bokeh_container" class="hidden effects_container">
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b9.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b6.jpg" /> <div class="exampl_span"> Hearts 1</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b9.jpg)" data-second="myPhoto" data-background-blend-mode="screen"><img class="example_img" src="img/effects_exampls/b5.jpg" /> <div class="exampl_span"> Hearts 2</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b10.jpg)" data-second="myPhoto" data-background-blend-mode="screen"><img class="example_img" src="img/effects_exampls/b7.jpg" /> <div class="exampl_span"> Hearts 3</div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/bokeh/b10.jpg" data-background-blend-mode="luminosity"><img class="example_img" src="img/effects_exampls/b8.jpg" /> <div class="exampl_span"> Hearts 4</div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/bokeh/b9.jpg" data-background-blend-mode="luminosity"><img class="example_img" src="img/effects_exampls/b4.jpg" /> <div class="exampl_span"> Hearts 5</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b1.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b1.jpg" /> <div class="exampl_span"> Bokeh 1</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b2.jpg)" data-second="myPhoto" data-background-blend-mode="screen"><img class="example_img" src="img/effects_exampls/b2.jpg" /> <div class="exampl_span"> Bokeh 2</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b2.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b3.jpg" /> <div class="exampl_span"> Bokeh 3</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b3.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b9.jpg" /> <div class="exampl_span"> Bokeh 4</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b5.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b10.jpg" /> <div class="exampl_span"> Bokeh 5</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b6.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b11.jpg" /> <div class="exampl_span"> Bokeh 6</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b7.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b12.jpg" /> <div class="exampl_span"> Bokeh 7</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b8.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b13.jpg" /> <div class="exampl_span"> Bokeh 8</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b11.png)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b14a.jpg" /> <div class="exampl_span"> Bokeh 9</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b12.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b15.jpg" /> <div class="exampl_span"> Bokeh 10</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b13.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b16.jpg" /> <div class="exampl_span"> Bokeh 11</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b14.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b17.jpg" /> <div class="exampl_span"> Bokeh 12</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b15.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b18.jpg" /> <div class="exampl_span"> Bokeh 13</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/bokeh/b16.png)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/b19.jpg" /> <div class="exampl_span"> Bokeh 14</div></div>
+
+                            </div>
+                        </div>
+
+
+                        <div >
+                            <div id="effects_textures" class="range">
+                                <label class="design_label">Textures  </label><i class="fa fa-caret-down"></i>
+                            </div>
+
+                            <div id="effects_textures_container" class="hidden effects_container">
+                              
+                                <div class="range range_example" data-first="url(/img/effects/texture/t2.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t23.jpg" /> <div class="exampl_span">Aquarel </div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t17.JPG)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t17.jpg" /> <div class="exampl_span">Authentic </div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t5.jpeg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t5.jpg" /> <div class="exampl_span">Bubbles</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/t18.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t18.jpg" /> <div class="exampl_span">Brick wall</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/t24.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t24.jpg" /> <div class="exampl_span">Canvas 1</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/t25.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t25.jpg" /> <div class="exampl_span">Canvas 2</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/t3.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t3.jpg" /> <div class="exampl_span"> Fire 1</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t15.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t15.jpg" /> <div class="exampl_span">Fire 2</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/t9.png)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t10.jpg" /> <div class="exampl_span">Galaxy </div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/texture/halftone1.png)" data-background-blend-mode="darken"><img class="example_img" src="img/effects_exampls/t11.jpg" /> <div class="exampl_span">Halftone1 </div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/texture/halftone2.png)" data-background-blend-mode="darken"><img class="example_img" src="img/effects_exampls/t12.jpg" /> <div class="exampl_span">Halftone2 </div></div>
+                                
+                                 <div class="range range_example" data-first="url(/img/effects/texture/t1.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t1.jpg" /> <div class="exampl_span">Ice</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/t22.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t22.jpg" /> <div class="exampl_span">Leaves</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t7.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t7.jpg" /> <div class="exampl_span"> Metal plates</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t6.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t6.jpg" /> <div class="exampl_span">Pattern 1</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t8.png)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t8.jpg" /> <div class="exampl_span">Pattern 2</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t21.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t21.jpg" /> <div class="exampl_span">Pattern 3</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t19.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t19.jpg" /> <div class="exampl_span">Pattern 4</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t20.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t20.jpg" /> <div class="exampl_span">Pattern 5</div></div>
+                                
+                                                                
+                                  <div class="range range_example" data-first="url(/img/effects/texture/t14.png)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t14.jpg" /> <div class="exampl_span">Parchment</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/t2.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t2.jpg" /> <div class="exampl_span">Rain</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t16.jpeg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t16.jpg" /> <div class="exampl_span">Sky </div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/texture/10.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t9.jpg" /> <div class="exampl_span">Water</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/texture/t4.png)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/t4.jpg" /> <div class="exampl_span">Wood</div></div>
+
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div id="effects_multi" class="range">
+                                <label class="design_label">MultiColor </label><i class="fa fa-caret-down"></i>
+                            </div>
+
+                            <div id="effects_multi_container" class="hidden effects_container">
+                                <div class="range range_example" data-first="url(/img/effects/multi/m1.png)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/multi1a.jpg" /> <div class="exampl_span"> 1.</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/multi/m1.png)" data-second="myPhoto" data-background-blend-mode="screen"><img class="example_img" src="img/effects_exampls/multi1b.jpg" /> <div class="exampl_span"> 2.</div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/multi/m1.png)" data-background-blend-mode="luminosity"><img class="example_img" src="img/effects_exampls/multi1c.jpg" /> <div class="exampl_span"> 3.</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/multi/m2.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/multi2a.jpg" /> <div class="exampl_span"> 4.</div></div>
+
+                                <div class="range range_example" data-first="url(/img/effects/multi/m6.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/multi6a.jpg" /> <div class="exampl_span"> 5.</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/multi/m9.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/multi9a.jpg" /> <div class="exampl_span"> 6.</div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/multi/m6.jpg)" data-background-blend-mode="luminosity"><img class="example_img" src="img/effects_exampls/multi6c.jpg" /> <div class="exampl_span"> 7.</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/multi/m7.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/multi7a.jpg" /> <div class="exampl_span"> 8.</div></div>
+                                <div class="range range_example" data-first="url(/img/effects/multi/m10.jpg)" data-second="myPhoto" data-background-blend-mode="overlay"><img class="example_img" src="img/effects_exampls/multi10a.jpg" /> <div class="exampl_span"> 9.</div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/multi/m10.jpg)" data-background-blend-mode="luminosity"><img class="example_img" src="img/effects_exampls/multi10c.jpg" /> <div class="exampl_span"> 10.</div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/multi/m2.jpg)" data-background-blend-mode="luminosity"><img class="example_img" src="img/effects_exampls/multi2c.jpg" /> <div class="exampl_span"> 11.</div></div>
+                                <div class="range range_example" data-first="myPhoto" data-second="url(/img/effects/multi/m8.jpg)" data-background-blend-mode="luminosity"><img class="example_img" src="img/effects_exampls/multi8c.jpg" /> <div class="exampl_span"> 12.</div></div>
+
+                            </div>
+                        </div>
+
+
+                        <div id="save_cancel_filter" class="save_cancel">
+                            <button id="save_filter" class="button_design">Save</button>
+                            &nbsp;
+                            <button id="cancel_filter" class="button_design">Cancel</button>
+                        </div>
+                    </div>
+                    <!--Frames-->
+                    <div class="types_change hidden color_gray2" id="frame">
+
+                        <div class="like_h2">Frames:</div>
+
+                        <div class="range">
+                            <label class="design_label">Border width:</label>
+                            <input type="text" id="border_w_rangeInput" class="all_text_range" value="0">
+                            <label class="label_demention"> px</label>
+                            <br />
+                            <input type="range" min="0" max="50" step="1px" value="0" id="border_w_range" class="all_range">
+                        </div>
+
+                        <div class="range">
+                            <label class="design_label">Border radius:</label>
+                            <input type="text" id="border_r_rangeInput" class="all_text_range" value="0">
+                            <label class="label_demention"> px</label>
+                            <br />
+                            <input type="range" min="0" max="500" step="1px" value="0" id="border_r_range" class="all_range">
+
+                        </div>
+
+                        <div class="range">
+                            <label class="design_label">Border style:</label>
+                            <select id="select_border" class="all_select">
+                                <option value="solid">solid</option>
+                                <option value="dotted">dotted</option>
+                                <option value="dashed">dashed</option>
+                                <option value="double">double</option>
+                                <option value="groove">groove</option>
+                                <option value="ridge">ridge</option>
+                                <option value="inset">inset</option>
+                                <option value="outset">outset</option>
+                                <option value="none">none</option>
+                            </select>
+
+                        </div>
+
+                        <div class="range">
+                            <div>
+                                <label class="design_label">Border color:</label>
+                                <input type="color" id="color_border" value="#ffffff">
+
+                            </div>
+                        </div>
+                        <hr />
+                        <label class="individual">Individual border: </label>
+                        <input type="checkbox" name="choice1" id="individual_border_checkbox" />
+                        <br />
+                        <div id="individual_border_div" class="hidden">
+
+                            <div class="individual_border_label">Border top:</div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="50" step="1px" value="0" id="top_border_w_range" class="all_range">
+                                <input type="text" id="top_border_w_rangeInput" class="ind_text_range" value="0">
+                                <label class="ind_label_demention"> px</label>
+                            </div>
+                            <div class="ind_range">
+                                <select id="top_select_border" class="all_select">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="none">none</option>
+                                </select>
+                                &nbsp;         &nbsp;
+                                <input type="color" id="top_color_border" value="#ffffff">
+                            </div>
+
+                            <div class="individual_border_label">Border right:</div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="50" step="1px" value="0" id="right_border_w_range" class="all_range">
+                                <input type="text" id="right_border_w_rangeInput" class="ind_text_range" value="0">
+                                <label class="ind_label_demention"> px</label>
+                            </div>
+                            <div class="ind_range">
+                                <select id="right_select_border" class="all_select">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="none">none</option>
+                                </select>
+                                &nbsp;         &nbsp;
+                                <input type="color" id="right_color_border" value="#ffffff">
+                            </div>
+
+                            <div class="individual_border_label">Border bottom:</div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="50" step="1px" value="0" id="bottom_border_w_range" class="all_range">
+                                <input type="text" id="bottom_border_w_rangeInput" class="ind_text_range" value="0">
+                                <label class="ind_label_demention"> px</label>
+                            </div>
+                            <div class="ind_range">
+                                <select id="bottom_select_border" class="all_select">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="none">none</option>
+                                </select>
+                                &nbsp;         &nbsp;
+                                <input type="color" id="bottom_color_border" value="#ffffff">
+                            </div>
+
+                            <div class="individual_border_label">Border left:</div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="50" step="1px" value="0" id="left_border_w_range" class="all_range">
+                                <input type="text" id="left_border_w_rangeInput" class="ind_text_range" value="0">
+                                <label class="ind_label_demention"> px</label>
+                            </div>
+                            <div class="ind_range">
+                                <select id="left_select_border" class="all_select">
+                                    <option value="solid">solid</option>
+                                    <option value="dotted">dotted</option>
+                                    <option value="dashed">dashed</option>
+                                    <option value="double">double</option>
+                                    <option value="groove">groove</option>
+                                    <option value="ridge">ridge</option>
+                                    <option value="inset">inset</option>
+                                    <option value="outset">outset</option>
+                                    <option value="none">none</option>
+                                </select>
+                                &nbsp;         &nbsp;
+                                <input type="color" id="left_color_border" value="#ffffff">
+                            </div>
+                        </div>
+                        <hr />
+
+
+                        <label class="individual">Individual radius: </label>
+                        <input type="checkbox" name="choice2" id="individual_radius_checkbox" />
+                        <br />
+                        <div id="individual_radius_div" class="hidden">
+
+                            <div class="individual_border_label">Top left: </div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="500" step="1px" value="0" id="border_rtl_range" class="all_range">
+                                <input type="text" id="border_rtl_rangeInput" class="ind_text_range" value="0">
+                                <label class="label_demention"> px</label>
+                            </div>
+
+                            <div class="individual_border_label">Top right: </div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="500" step="1px" value="0" id="border_rtr_range" class="all_range">
+                                <input type="text" id="border_rtr_rangeInput" class="ind_text_range" value="0">
+                                <label class="label_demention"> px</label>
+                            </div>
+
+                            <div class="individual_border_label">Bottom left: </div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="500" step="1px" value="0" id="border_rbl_range" class="all_range">
+                                <input type="text" id="border_rbl_rangeInput" class="ind_text_range" value="0">
+                                <label class="label_demention"> px</label>
+                            </div>
+
+                            <div class="individual_border_label">Bottom right:</div>
+                            <div class="ind_range">
+                                <input type="range" min="0" max="500" step="1px" value="0" id="border_rbr_range" class="all_range">
+                                <input type="text" id="border_rbr_rangeInput" class="ind_text_range" value="0">
+                                <label class="label_demention"> px</label>
+                            </div>
+                        </div>
+
+                        <hr />
+
+                        <div id="save_cancel_frame" class="save_cancel">
+                            <button id="save_frame" class="button_design">Save</button>
+                            &nbsp;
+                            <button id="cancel_frame" class="button_design">Cancel</button>
+                        </div>
+                    </div>
+
+                    <!--Meme-->
+                    <div class="types_change hidden color_gray2" id="text">
+
+                        <div class="like_h2">Meme:</div>
+
+
+                        <div class="range">
+                            <label class="design_label">Font: </label>
+                            <select id="text_style" class="all_select">
+                                <option style="font-family:Arial" value="Arial">arial</option>
+                                <option style="font-family:Codystar" value="Codystar">codystar</option>
+                                <option style="font-family:Finger Paint" value="Finger Paint">finger faint</option>
+                                <option style="font-family:Kranky" value="Kranky">kranky</option>
+                                <option style="font-family:Eater" value="Eater">eater</option>
+                                <option style="font-family:Griffy" value="Griffy">griffy</option>
+                                <option style="font-family:Monofett" value="Monofett">monofett</option>
+                                <option style="font-family:Barrio" value="Barrio">barrio</option>
+                                <option style="font-family:Flavors" value="Flavors">flavors</option>
+                                <option style="font-family:Ewert" value="Ewert">ewert</option>
+                                <option style="font-family:Caesar Dressing" value="Caesar Dressing">caesar dressing</option>
+                                <option style="font-family:Arbutus" value="Arbutus">arbutus</option>
+                                <option style="font-family:Bungee Outline" value="Bungee Outline">bungee outline</option>
+                                <option style="font-family:Piedra" value="Piedra">piedra</option>
+                                <option style="font-family:Smokum" value="Smokum">smokum</option>
+                                <option style="font-family:Butcherman" value="Butcherman">butcherman</option>
+                                <option style="font-family:Hanalei" value="Hanalei">hanalei</option>
+                                <option style="font-family:Bonbon" value="Bonbon">bonbon</option>
+                                <option style="font-family:Bungee Hairline" value="Bungee Hairline">bungee hairline</option>
+                                <option style="font-family:Libre Barcode 39 Text" value="Libre Barcode 39 Text">barcode</option>
+                                <option style="font-family:Londrina Shadow" value="Londrina Shadow">londrina shadow</option>
+                                <option style="font-family:Srisakdi" value="Srisakdi">srisakdi</option>
+                                <option style="font-family:Pacifico" value="Pacifico">pacifico</option>
+                                <option style="font-family:Dancing Script" value="Dancing Script">dancing script</option>
+                                <option style="font-family:Shadows Into Light" value="Shadows Into Light">shadows into light</option>
+                                <option style="font-family:Indie Flower" value="Indie Flower">indie flower</option>
+                                <option style="font-family:Monoton" value="Monoton">monoton</option>
+                                <option style="font-family:Audiowide" value="Audiowide">audiowide</option>
+                                <option style="font-family:Sirin Stencil" value="Sirin Stencil">sirin stencil</option>
+                                <option style="font-family:Laila" value="Laila">laila</option>
+                                <option style="font-family:Noto Serif" value="Noto Serif">noto serif</option>
+                                <option style="font-family:Merriweather" value="Merriweather">merriweather</option>
+                                <option style="font-family:Crimson Text" value="Crimson Text">crimson text</option>
+                                <option style="font-family:Ultra" value="Ultra">ultra</option>
+                                <option style="font-family:Roboto" value="Roboto">roboto</option>
+                                <option style="font-family:Lato" value="Lato">lato</option>
+                                <option style="font-family:Dosis" value="Dosis">dosis</option>
+                                <option style="font-family:Oswald" value="Oswald">oswald</option>
+                                <option style="font-family:Josefin Sans" value="Josefin Sans">josefin sans</option>
+                                <option style="font-family:Orbitron" value="Orbitron">orbitron</option>
+                                <option style="font-family:Allerta Stencil" value="Allerta Stencil">allerta stencil</option>
+                            </select>
+                        </div>
+                        <div class="range">
+                            <label class="design_label">Font size: </label>         &nbsp;
+                            <input type="text" id="text_font_size_rangeInput" class="text_font_size_range" value="14">
+                            <label class="label_demention"> px</label>
+                        </div>
+
+                        <div class="range">
+                            <label class="design_label">Color: </label> &nbsp;
+                            <input type="color" id="text_font_color" value="#ffffff">
+                        </div>
+
+
+                        <div class="design_label">Align: </div>
+                        <div class="range">
+
+                            <input type="radio" name="align_choice" id="align_left" hidden />
+                            <label class="menu_design" for="align_left"><abbr title="left"><img class="all_img" id="a_left" src="https://img.icons8.com/metro/26/000000/align-left.png"></abbr></label>
+                            &nbsp;
+                            <input type="radio" name="align_choice" id="align_center" hidden />
+                            <label class="menu_design" for="align_center"><abbr title="center"><img class="all_img" id="a_center" src="https://img.icons8.com/metro/26/000000/align-center.png"></abbr></label>
+                            &nbsp;
+                            <input type="radio" name="align_choice" id="align_right" hidden />
+                            <label class="menu_design" for="align_right"><abbr title="right"><img class="all_img" id="a_right" src="https://img.icons8.com/metro/26/000000/align-right.png"></abbr></label>
+
+                        </div>
+
+                        <div class="range">
+                            <input type="checkbox" name="bold_choice" id="bold_choice" hidden />
+                            <label class="menu_design" for="bold_choice"><abbr title="bold"><img class="all_img decoration_text" id="bold" src="https://img.icons8.com/ios/26/000000/bold-filled.png"></abbr></label>
+
+                            <input type="checkbox" name="italic_choice" id="italic_choice" hidden />
+                            <label class="menu_design" for="italic_choice"><abbr title="italic"><img class="all_img decoration_text" id="italic" src="https://img.icons8.com/material/26/000000/italic.png"></abbr></label>
+
+                            <input type="checkbox" name="underline_choice" id="underline_choice" hidden />
+                            <label class="menu_design" for="underline_choice"><abbr title="underline"><img class="all_img decoration_text" id="underline" src="https://img.icons8.com/material-outlined/26/000000/underline.png"></abbr></label>
+
+                            <input type="checkbox" name="strike_choice" id="strike_choice" hidden />
+                            <label class="menu_design" for="strike_choice"><abbr title="strike"><img class="all_img decoration_text" id="strike" src="https://img.icons8.com/ios/26/000000/strikethrough-filled.png"></abbr></label>
+
+                            <!--<input type="checkbox" name="script_choice1" id="super_choice" hidden />
+                <label class="menu_design" for="super"><abbr title="super"><img class="all_img"  id="super" src="https://img.icons8.com/material/26/000000/square-number.png"></abbr></label>
+                <input type="checkbox" name="script_choice2" id="sub_choice" hidden />
+                <label class="menu_design" for="sub"><abbr title="sub"><img class="all_img"  id="sub" src="https://img.icons8.com/material-outlined/26/000000/subscript.png"></abbr></label>-->
+
+                        </div>
+
+                        <div class="design_label">Capitalization: </div>
+
+                        <div class="range">
+                            <input type="radio" name="capitalization_choice1" id="usual_choice" hidden />
+                            <label class="menu_design" for="usual_choice"><abbr title="usual"><img class="all_img" id="usual" class="decoration_text" src="https://img.icons8.com/material/26/000000/lowercase.png"></abbr></label>
+                            &nbsp;
+                            <input type="radio" name="capitalization_choice1" id="uppercase_choice" hidden />
+                            <label class="menu_design" for="uppercase_choice"><abbr title="uppercase"><img class="all_img" id="uppercase" class="decoration_text" src="https://img.icons8.com/material/26/000000/uppercase.png"></abbr></label>
+                            &nbsp;
+                            <input type="radio" name="capitalization_choice1" id="lowercase_choice" hidden />
+                            <label class="menu_design" for="lowercase_choice"><abbr title="lowercase"><img class="all_img" id="lowercase" class="decoration_text" src="https://img.icons8.com/material/26/000000/lowercase-2.png"></abbr></label>
+
+                        </div>
+
+                        <div id="save_cancel_meme" class="save_cancel">
+                            <button id="save_meme" class="button_design">Save</button>
+                            &nbsp;
+                            <button id="cancel_meme" class="button_design">Cancel</button>
+                        </div>
+
+                    </div>
+
+                    <!--Stickers-->
+
+                    <div class="types_change hidden color_gray2" id="stickers">
+
+                        <div class="like_h2">Stickers:</div>
+
+                        <!--Smiles-->
+                        <div class="range">
+                            <label class="design_label">Smiles:</label>
+                            <input type="checkbox" name="choice_smiles" id="choice_smiles_checkbox" />
+                            <table id="table_smiles" class="hidden all_tables">
+                                <tr>
+                                    <td value="&#128515">&#128515</td>
+                                    <td value="&#128516">&#128516</td>
+                                    <td value="&#128517">&#128517</td>
+                                    <td value="&#128519">&#128519</td>
+                                    <td value="&#128521">&#128521</td>
+                                    <td value="&#128520">&#128520</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128522">&#128522</td>
+                                    <td value="&#128523">&#128523</td>
+                                    <td value="&#128525">&#128525</td>
+                                    <td value="&#128526">&#128526</td>
+                                    <td value="&#128527">&#128527</td>
+                                    <td value="&#128528">&#128528</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128533">&#128533</td>
+                                    <td value="&#128532">&#128532</td>
+                                    <td value="&#128534">&#128534</td>
+                                    <td value="&#128536">&#128536</td>
+                                    <td value="&#128540">&#128540</td>
+                                    <td value="&#128543">&#128543</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128545">&#128545</td>
+                                    <td value="&#128549">&#128549</td>
+                                    <td value="&#128550">&#128550</td>
+                                    <td value="&#128553">&#128553</td>
+                                    <td value="&#128557">&#128557</td>
+                                    <td value="&#128558">&#128558</td>
+                                </tr>
+
+                                <tr>
+                                    <td value="&#128564">&#128564</td>
+                                    <td value="&#128565">&#128565</td>
+                                    <td value="&#128567">&#128567</td>
+                                    <td value="&#128580">&#128580</td>
+                                    <td value="&#128579">&#128579</td>
+                                    <td value="&#129296">&#129296</td>
+                                </tr>
+
+                                <tr>
+                                    <td value="&#129297">&#129297</td>
+                                    <td value="&#129313">&#129313</td>
+                                    <td value="&#129321">&#129321</td>
+                                    <td value="&#129319">&#129319</td>
+                                    <td value="&#129317">&#129317</td>
+                                    <td value="&#129299">&#129299</td>
+
+                                </tr>
+                                <tr>
+                                    <td value="&#127877">&#127877</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!--Gestures-->
+                        <div class="range">
+                            <label class="design_label">Gestures:</label>
+                            <input type="checkbox" name="choice_gestures" id="choice_gestures_checkbox" />
+                            <table id="table_gestures" class="all_tables hidden">
+                                <tr>
+                                    <td value="&#128070">&#128070</td>
+                                    <td value="&#128071">&#128071</td>
+                                    <td value="&#128072">&#128072</td>
+                                    <td value="&#128073">&#128073</td>
+                                    <td value="&#128076">&#128076</td>
+                                    <td value="&#128077">&#128077</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128078">&#128078</td>
+                                    <td value="&#128400">&#128400</td>
+                                    <td value="&#128405">&#128405</td>
+                                </tr>
+
+                            </table>
+
+                            <!--<select id="select_gestures" class="all_select">
+
+                    <option value="&#128070">&#128070</option>
+                    <option value="&#128071">&#128071</option>
+                    <option value="&#128072">&#128072</option>
+                    <option value="&#128073">&#128073</option>
+                    <option value="&#128076">&#128076</option>
+                    <option value="&#128077">&#128077</option>
+
+                    <option value="&#128078">&#128078</option>
+                    <option value="&#128400">&#128400</option>
+                    <option value="&#128405">&#128405</option>
+
+
+                </select>-->
+                        </div>
+                        <!--Hearts-->
+                        <div class="range">
+                            <label class="design_label">Hearts:</label>
+                            <input type="checkbox" name="choice_hearts" id="choice_hearts_checkbox" />
+                            <table id="table_hearts" class="all_tables hidden">
+                                <tr>
+                                    <td value="&#128150">&#128150</td>
+                                    <td value="&#128151">&#128151</td>
+                                    <td value="&#128152">&#128152</td>
+                                    <td value="&#128153">&#128153</td>
+                                    <td value="&#128154">&#128154</td>
+                                    <td value="&#128155">&#128155</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128156">&#128156</td>
+                                    <td value="&#128157">&#128157</td>
+                                    <td value="&#128158">&#128158</td>
+                                    <td value="&#128159">&#128159</td>
+                                    <td value="&#128149">&#128149</td>
+                                    <td value="&#128148">&#128148</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128147">&#128147</td>
+                                    <td value="&#10084">&#10084</td>
+                                    <td value="&#128145">&#128145</td>
+                                    <td value="&#9825">&#9825</td>
+                                    <td value="&#9829">&#9829</td>
+                                </tr>
+                            </table>
+                            <!--<select id="select_hearts" class="all_select">
+                    <option value="&#128150">&#128150</option>
+                    <option value="&#128151">&#128151</option>
+                    <option value="&#128152">&#128152</option>
+                    <option value="&#128153">&#128153</option>
+                    <option value="&#128154">&#128154</option>
+                    <option value="&#128155">&#128155</option>
+
+                    <option value="&#128156">&#128156</option>
+                    <option value="&#128157">&#128157</option>
+                    <option value="&#128158">&#128158</option>
+                    <option value="&#128159">&#128159</option>
+                    <option value="&#128149">&#128149</option>
+                    <option value="&#128148">&#128148</option>
+
+                    <option value="&#128147">&#128147</option>
+                    <option value="&#10084">&#10084</option>
+                    <option value="&#128145">&#128145</option>
+                    <option value="&#9825">&#9825</option>
+                    <option value="&#9829">&#9829</option>
+
+                </select>-->
+                        </div>
+
+                        <!--People-->
+                        <div class="range">
+                            <label class="design_label">People:</label>
+                            <select id="select_people" class="all_select">
+
+                                <option value="&#128102">&#128102</option>
+                                <option value="&#128103">&#128103</option>
+                                <option value="&#128104">&#128104</option>
+                                <option value="&#128105">&#128105</option>
+                                <option value="&#128110">&#128110</option>
+                                <option value="&#128112">&#128112</option>
+                            </select>
+
+                        </div>
+
+                        <!--Animals-->
+                        <div class="range">
+                            <label class="design_label">Animals:</label>
+                            <input type="checkbox" name="choice_animals" id="choice_animals_checkbox" />
+                            <table id="table_animals" class="all_tables hidden">
+                                <tr>
+                                    <td value="&#128053">&#128053</td>
+                                    <td value="&#128055">&#128055</td>
+                                    <td value="&#128048">&#128048</td>
+                                    <td value="&#128054">&#128054</td>
+                                    <td value="&#128057">&#128057</td>
+                                    <td value="&#128056">&#128056</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128042">&#128042</td>
+                                    <td value="&#128032">&#128032</td>
+                                    <td value="&#128019">&#128019</td>
+                                    <td value="&#128007">&#128007</td>
+                                    <td value="&#128008">&#128008</td>
+                                    <td value="&#128015">&#128015</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#129409">&#129409</td>
+                                    <td value="&#129412">&#129412</td>
+                                    <td value="&#129413">&#129413</td>
+                                    <td value="&#129419">&#129419</td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <!--Flowers-->
+                        <div class="range">
+                            <label class="design_label">Flowers:</label>
+
+                            <input type="checkbox" name="choice_flowers" id="choice_flowers_checkbox" />
+                            <table id="table_flowers" class="all_tables hidden">
+                                <tr>
+                                    <td value="&#127799">&#127799</td>
+                                    <td value="&#127800">&#127800</td>
+                                    <td value="&#127802">&#127802</td>
+                                    <td value="&#127801">&#127801</td>
+                                    <td value="&#127804">&#127804</td>
+                                    <td value="&#127803">&#127803</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#127808">&#127808</td>
+                                    <td value="&#127809">&#127809</td>
+                                    <td value="&#127810">&#127810</td>
+                                    <td value="&#128261">&#128261</td>
+                                    <td value="&#128262">&#128262</td>
+                                    <td value="&#10045">&#10045</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#10047">&#10047</td>
+                                    <td value="&#10048">&#10048</td>
+                                    <td value="&#10049">&#10049</td>
+                                </tr>
+
+                            </table>
+
+                        </div>
+
+                        <!--Food-->
+                        <div class="range">
+                            <label class="design_label">Food:</label>
+                            <input type="checkbox" name="choice_food" id="choice_food_checkbox" />
+                            <table id="table_food" class="all_tables hidden">
+                                <tr>
+                                    <td value="&#127828">&#127828</td>
+                                    <td value="&#127829">&#127829</td>
+                                    <td value="&#127822">&#127822</td>
+                                    <td value="&#127823">&#127823</td>
+                                    <td value="&#127846">&#127846</td>
+                                    <td value="&#127853">&#127853</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#127852">&#127852</td>
+                                    <td value="&#127849">&#127849</td>
+                                    <td value="&#127866">&#127866</td>
+                                    <td value="&#129365">&#129365</td>
+                                    <td value="&#129383">&#129383</td>
+                                    <td value="&#129384">&#129384</td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!--Snowflakes-->
+                        <div class="range">
+                            <label class="design_label">Snowflakes:</label>
+                            <select id="select_snowflakes" class="all_select">
+                                <option value="&#10035">&#10035</option>
+                                <option value="&#10036">&#10036</option>
+                                <option value="&#10042">&#10042</option>
+                                <option value="&#10043">&#10043</option>
+                                <option value="&#10052">&#10052</option>
+                                <option value="&#10054">&#10054</option>
+                                <option value="&#10057">&#10057</option>
+
+                                <option value="&#10058">&#10058</option>
+                                <option value="&#10059">&#10059</option>
+                                <option value="&#10057">&#10057</option>
+
+                            </select>
+                        </div>
+
+                        <!--Shapes-->
+                        <div class="range">
+                            <label class="design_label">Shapes:</label>
+                            <input type="checkbox" name="choice_shapes" id="choice_shapes_checkbox" />
+                            <table id="table_shapes" class="all_tables hidden">
+
+                                <tr>
+                                    <td value="&#11093">&#11093</td>
+                                    <td value="&#128308">&#128308</td>
+                                    <td value="&#128309">&#128309</td>
+                                    <td value="&#128310">&#128310</td>
+                                    <td value="&#128311">&#128311</td>
+                                    <td value="&#128314">&#128314</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#128315">&#128315</td>
+                                    <td value="&#11088">&#11088</td>
+                                    <td value="&#9824">&#9824</td>
+                                    <td value="&#9827">&#9827</td>
+                                    <td value="&#9829">&#9829</td>
+                                    <td value="&#9830">&#9830</td>
+                                </tr>
+                                <tr>
+                                    <td value="&#10025">&#10025</td>
+                                    <td value="&#10028">&#10028</td>
+                                    <td value="&#10030">&#10030</td>
+                                    <td value="&#10037">&#10037</td>
+                                    <td value="&#10038">&#10038</td>
+                                    <td value="&#9674">&#9674</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <!--Arrows-->
+                        <div class="range">
+                            <label class="design_label">Arrows:</label>
+                            <select id="select_arrows" class="all_select">
+                                <option value="&#9917">&#9917</option>
+                                <option value="&#9918">&#9918</option>
+                                <option value="&#127952">&#127952</option>
+                                <option value="&#127955">&#127955</option>
+                                <option value="&#129351">&#129351</option>
+                                <option value="&#129352">&#129352</option>
+                                <option value="&#129353">&#129353</option>
+
+                            </select>
+                        </div>
+
+                        <!--More-->
+                        <div class="range">
+                            <label class="design_label">More...</label>
+                            <select id="select_more" class="all_select">
+                                <option value="&#10067">&#10067</option>
+                                <option value="&#10068">&#10068</option>
+                                <option value="&#10071">&#10071</option>
+                                <option value="&#10069">&#10069</option>
+                                <option value="&#127876">&#127876</option>
+                                <option value="&#127877">&#127877</option>
+                                <option value="&#127873">&#127873</option>
+
+                                <option value="&#127875">&#127875</option>
+                                <option value="&#9775">&#9775</option>
+                                <option value="&#9774">&#9774</option>
+                                <option value="&#9773">&#9773</option>
+                            </select>
+                        </div>
+
+                        <div id="save_cancel_rotate" class="save_cancel">
+                            <button id="save_rotate" class="button_design">Save</button>
+                            &nbsp;
+                            <button id="cancel_rotate" class="button_design">Cancel</button>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+                <div class="types_change hidden color_gray2" id="collages">
+
+                    <div class="like_h2">Collage:</div>
+
+
+
+                    <div>
+                        <div id="collage_frame" class="range">
+                            <label class="design_label">B&W </label><i class="fa fa-caret-down"></i>
+                        </div>
+                        <div id="collage_frame_container" class="hidden effects_container">
+                            <div class="range range_example" data-first="url(/img/collage/bwColl1.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll1.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl2.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll2.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl3.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll3.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl4.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll4.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl5.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll5.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl6.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll6.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl7.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll7.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll8.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl9.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll9.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl10.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll10.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl11.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll11.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl12.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll12.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl13.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll13.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl14.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll14.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl15.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll15.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl16.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll16.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl17.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll17.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl18.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll18.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl19.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll19.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl20.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll20.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl21.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll21.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/bwColl22.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="img/effects_exampls/coll/bwcoll22.jpg" /> </div>
+                            
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="collage_frame_colored" class="range">
+                            <label class="design_label">Colored </label><i class="fa fa-caret-down"></i>
+                        </div>
+                        <div id="collage_frame_colored_container" class="hidden effects_container">
+                            <div class="range range_example" data-first="url(/img/collage/colColl1.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll1.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl2.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll2.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl3.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll3.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl24.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll24.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl5.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll5.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl6.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll6.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl7.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll7.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl8.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll8.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl9.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll9.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl10.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll10.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl11.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll11.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl12.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll12.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl13.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll13.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl14.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll14.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl23.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll23.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl16.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 16.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll16.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl17.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 17.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll17.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl18.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 18.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll18.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl19.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 19.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll19.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl20.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 20.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll20.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl21.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 21.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll21.jpg" /> </div>
+                            <div class="range range_example" data-first="url(/img/collage/colColl22.png)" data-second="myPhoto" data-background-blend-mode="normal"><span class="exampl_span3"> 22.</span> <img class="example_img1" src="img/effects_exampls/coll/colcoll22.jpg" /> </div>
+                                                   
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="collage_polaroid_style" class="range">
+                            <label class="design_label">Polaroid style </label><i class="fa fa-caret-down"></i>
+                        </div>
+                        <hr id="hrPolaroid1" class="hidden" />
+
+                        <!--<div id="param_polaroid" class="range hidden">
+                            <label class="design_label">Line size: </label>         &nbsp;
+                            <input type="text" id="collage_size_rangeInput" class="text_font_size_range" value="2">
+                            <label class="label_demention"> px</label>
+                            <br /><br />
+                            <label class="design_label">Line color: </label> &nbsp;
+                            <input type="color" id="collage_color" value="black">
+                            <label class="design_label">Background color: </label> &nbsp;
+                            <input type="color" id="collage_color" value="black">
+                            <label class="design_label">Background opacity: </label>         &nbsp;
+                            <input type="text" id="collage_size_rangeInput" class="text_font_size_range" value="2">
+                            <label class="design_label">Background: </label>         &nbsp;
+                            <input type="text" id="collage_size_rangeInput" class="text_font_size_range" value="2">
+                        </div>-->
+
+                        <div id="collage_polaroid_styles_container" class="hidden">
+
+                            <label class="design_label">Shot width: </label>         &nbsp;
+                            <input type="range" min="0" max="1000" step="10" value="100" id="shot_x_size_rangeInput" class="all_range">
+                            <!--<input type="text" id="shot_x_size_rangeInput" class="text_font_size_range" value="100">-->
+  
+                            <br/>
+                            <label class="design_label">Shot height: </label>         &nbsp;
+                            <input type="range" min="0" max="1000" step="10" value="100" id="shot_y_size_rangeInput" class="all_range">
+                            <!--<input type="text" id="shot_y_size_rangeInput" class="text_font_size_range" value="100">-->
+                          
+                            <br />
+                            <label class="design_label">Opacity: </label>         &nbsp;
+                            <input type="range" min="0" max="1" step="0.1" value="1" id="shot_opacity_range" class="all_range">
+                            <br/>
+                            <label class="design_label">Shot position: </label>
+                            <br />
+                            <div id="shot_start_container">
+                                <div id="shot_start_img">
+                                    <div id="shot_rect"></div>
+                                    <div id="lablx0y0">(x0,y0)</div>
+                                    <div id="x0y0_corner" class="exampl_corner1"> </div>
+
+                                </div>
+
+                                <div id="shot_start_parametrs">
+
+                                    <div class="bord" id="x0">
+                                        x0:
+                                        <input type="range" min="0" max="1000" step="5" value="100" id="shot_x0_size_rangeInput" class="all_range">
+                                        
+                                    </div>
+
+                                    <div class="bord" id="y0">
+                                        y0:
+                                        <input type="range" min="0" max="1000" step="5" value="100" id="shot_y0_size_rangeInput" class="all_range">
+
+                                 
+                                    </div>
+                                    <div class="bord" id="slope">
+                                        slope:
+                                        <input type="range" min="0" max="360" step="1" value="0" id="shot_slope_rangeInput" class="all_range">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr id="hrPolaroid2" class="hidden" />
+                            <label class="design_label">Border width: </label>         &nbsp;
+                            <input type="text" id="shot_borderW_rangeInput" class="text_font_size_range" value="2">
+                            <label class="label_demention"> px</label>
+                            <br />
+                            <label class="design_label">Bottom border width: </label>         &nbsp;
+                            <input type="text" id="shot_borderBW_rangeInput" class="text_font_size_range" value="10">
+                            <label class="label_demention"> px</label>
+                            
+                            <br />
+                            <label class="design_label">Border color: </label> &nbsp;
+                            <input type="color" id="shot_border_color" value="#ffffff">
+
+                           
+
+                           
+                            <!--<div id="save_cancel_polaroidShot" class="save_cancel">
+                                <button id="new_shot" class="button_design">New shot</button>
+                                &nbsp;
+                                <button id="save_shot" class="button_design">Save</button>
+                                &nbsp;
+                                <button id="cancel_shot" class="button_design">Cancel</button>
+                            </div>-->
+                            <!--<label class="design_label">Border width: </label>         &nbsp;
+                            <input type="text" id="collage_size_rangeInput" class="text_font_size_range" value="2">
+                            <label class="label_demention"> px</label>
+                            <br />
+                            <label class="design_label">Line color: </label> &nbsp;
+                            <input type="color" id="collage_color" value="black">
+
+                            <label class="design_label">Background: </label> &nbsp;
+                            <input type="color" id="collage_color" value="black">
+
+                            <label class="design_label">Background opacity: </label>         &nbsp;
+                            <input type="text" id="collage_size_rangeInput" class="text_font_size_range" value="2">
+                            <label class="design_label">Background: </label>         &nbsp;
+                            <input type="text" id="collage_size_rangeInput" class="text_font_size_range" value="2">-->
+
+                            <!--<div class="range range_example" data-pattern="p1" data-second="myPhoto"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/collage/pattern1.jpg" /> </div>
+                            <div class="range range_example" data-pattern="p2" data-second="myPhoto"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/collage/pattern2.jpg" /> </div>
+                            <div class="range range_example" data-pattern="p3" data-second="myPhoto"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/collage/pattern3.jpg" /> </div>
+                            <div class="range range_example" data-pattern="p4" data-second="myPhoto"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/collage/pattern4.jpg" /> </div>
+                            <div class="range range_example" data-pattern="p5" data-second="myPhoto"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/collage/pattern5.jpg" /> </div>-->
+                            
+                            <!--<div class="range range_example" data-pattern="d1" data-second="myPhoto"><span class="exampl_span3"> d1.</span> <img class="example_img1" src="" /> </div>-->
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="collage_patterns" class="range">
+                            <label class="design_label">Patterns </label><i class="fa fa-caret-down"></i>
+                        </div>
+
+                        <div id="param_collage" class="range hidden">
+                            <label class="design_label">Line width: </label>         &nbsp;
+                            <input type="text" id="collage_size_rangeInput" class="text_font_size_range" value="2">
+                            <label class="label_demention"> px</label>
+                   <br /><br />
+                            <label class="design_label">Line color: </label> &nbsp;
+                            <input type="color" id="collage_color" value="#ffffff">
+                        </div>
+
+                        <div id="collage_patterns_container" class="hidden effects_container">
+
+                            <div class="range range_example" data-pattern="pattern1" data-second="myPhoto"><span class="exampl_span3"> 1.</span> <img class="example_img1" src="img/collage/pattern1.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern2" data-second="myPhoto"><span class="exampl_span3"> 2.</span> <img class="example_img1" src="img/collage/pattern2.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern3" data-second="myPhoto"><span class="exampl_span3"> 3.</span> <img class="example_img1" src="img/collage/pattern3.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern4" data-second="myPhoto"><span class="exampl_span3"> 4.</span> <img class="example_img1" src="img/collage/pattern4.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern5" data-second="myPhoto"><span class="exampl_span3"> 5.</span> <img class="example_img1" src="img/collage/pattern5.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern6" data-second="myPhoto"><span class="exampl_span3"> 6.</span> <img class="example_img1" src="img/collage/pattern6.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern7" data-second="myPhoto"><span class="exampl_span3"> 7.</span> <img class="example_img1" src="img/collage/pattern7.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern8" data-second="myPhoto"><span class="exampl_span3"> 8.</span> <img class="example_img1" src="img/collage/pattern8.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern9" data-second="myPhoto"><span class="exampl_span3"> 9.</span> <img class="example_img1" src="img/collage/pattern9.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern10" data-second="myPhoto"><span class="exampl_span3"> 10.</span> <img class="example_img1" src="img/collage/pattern10.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern11" data-second="myPhoto"><span class="exampl_span3"> 11.</span> <img class="example_img1" src="img/collage/pattern11.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern12" data-second="myPhoto"><span class="exampl_span3"> 12.</span> <img class="example_img1" src="img/collage/pattern12.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern13" data-second="myPhoto"><span class="exampl_span3"> 13.</span> <img class="example_img1" src="img/collage/pattern13.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern14" data-second="myPhoto"><span class="exampl_span3"> 14.</span> <img class="example_img1" src="img/collage/pattern14.jpg" /> </div>
+                            <div class="range range_example" data-pattern="pattern15" data-second="myPhoto"><span class="exampl_span3"> 15.</span> <img class="example_img1" src="img/collage/pattern15.jpg" /> </div>
+                            <!--<div class="range range_example" data-pattern="d1" data-second="myPhoto"><span class="exampl_span3"> d1.</span> <img class="example_img1" src="" /> </div>-->
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <div id="text_menu" style="visibility:hidden">
+
+                <input type="radio" name="text_menu" id="icon_for_new" hidden />
+                <label class="menu_design" for="icon_for_new"><abbr title="new text"><img src="https://img.icons8.com/material-outlined/24/000000/create-new.png"></abbr></label>
+
+                <input type="radio" name="text_menu" id="icon_for_save" hidden />
+                <label class="menu_design" for="icon_for_save"><abbr title="save"><img src="https://img.icons8.com/material-outlined/24/000000/save-close.png"></abbr></label>
+
+                <input type="radio" name="text_menu" id="icon_for_delete" hidden />
+                <label class="menu_design" for="icon_for_delete"><abbr title="delete"><img src="https://img.icons8.com/material/24/000000/delete.png"></abbr></label>
+
+
+            </div>
+            <div id="polaroidShot_menu" style="visibility:hidden">
+
+                <input type="radio" name="shot_menu" id="shot_for_new" hidden />
+                <label class="menu_design" for="shot_for_new"><abbr title="new shot"><img src="https://img.icons8.com/material-outlined/24/000000/create-new.png"></abbr></label>
+
+                <input type="radio" name="shot_menu" id="shot_for_save" hidden />
+                <label class="menu_design" for="shot_for_save"><abbr title="save"><img src="https://img.icons8.com/material-outlined/24/000000/save-close.png"></abbr></label>
+
+                <input type="radio" name="shot_menu" id="shot_for_delete" hidden />
+                <label class="menu_design" for="shot_for_delete"><abbr title="delete"><img src="https://img.icons8.com/material/24/000000/delete.png"></abbr></label>
+
+
+            </div>
+
+
+            <!--<div id="col_4">
+                <label class="design_label">Img width:</label>       
+                <br/>
+                <input type="text" id="cur_img_w_rangeInput" class="text_font_size_range2" value="0">
+                <label class="label_demention"> px</label>
+                <br />
+                <label class="design_label">Img height:</label>  
+                <br />
+                <input type="text" id="cur_img_h_rangeInput" class="text_font_size_range2" value="0">
+                <label class="label_demention"> px</label>
+                <br/>
+                <label class="design_label">Center (x,y):</label>
+                <br />
+                <label class="design_label">(</label>
+                <input type="text" id="chenterX_rangeInput" class="text_font_size_range2" value="0">
+                <label class="design_label">,</label>
+                <input type="text" id="chenterY_rangeInput" class="text_font_size_range2" value="0">
+                <label class="design_label">)</label>
+            </div>-->
+
+                <div id="col_3" class="grid-gradient">
+
+                    <div id="canva_textarea">
+                        <img src="" alt="" id="inpt-img" class="hidden">
+                        <canvas id="myCanvas"></canvas>
+                        <!--<div id="resizable" class="hidden ui-widget-content">-->
+                        <textarea class="hiddenText" id="textarea" rows="1" width="100%" placeholder="Type here"></textarea>
+                        <!--</div>-->
+                        <div id="canvas_corner1" class="hidden canvas_corner"></div>
+                        <div id="canvas_corner2" class="hidden canvas_corner"></div>
+                        <div id="canvas_corner3" class="hidden canvas_corner"></div>
+                        <div id="canvas_corner4" class="hidden canvas_corner"></div>
+                        <div id="canvas_line1" class="hidden canvas_line"></div>
+                        <div id="canvas_line2" class="hidden canvas_line"></div>
+                        <div id="canvas_line3" class="hidden canvas_line"></div>
+                        <div id="canvas_line4" class="hidden canvas_line"></div>
+                        <canvas id="helpCanvas" class="hidden"></canvas>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+
+  
+
+        <!--<div id="footer-copyright">
+            Copyright &copy;
+            <script>
+                    document.write(new Date().getFullYear())
+            </script> Oxana Krisyuk (Issaquah, WA)
+        </div>-->
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+
+
+
+</body>
+</html>
