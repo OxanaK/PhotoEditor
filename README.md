@@ -12,7 +12,7 @@ Try it! ---->  https://oxanak.github.io/photoEditor/home.html
 *  creating polaroid style collages. 
 *  saving new images on client side in different image file formats (png, jpg). 
 ## Technology: 
-JavaScript, HTML5/CSS, jQuery, React. 
+JavaScript, HTML5/CSS, jQuery.
 ## Images: 
 ![alt text](https://github.com/OxanaK/PhotoEditor/blob/master/examples_photos/photoEditor1.jpg)
 ![alt text](https://github.com/OxanaK/PhotoEditor/blob/master/examples_photos/photoEditor4.jpg)
