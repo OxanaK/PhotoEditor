@@ -18,3 +18,23 @@ C:\Users\krisy\documents\visual studio 2015\Projects\PhotoEditor\PhotoEditor\bin
 C:\Users\krisy\documents\visual studio 2015\Projects\PhotoEditor\PhotoEditor\obj\Debug\PhotoEditor.dll
 C:\Users\krisy\documents\visual studio 2015\Projects\PhotoEditor\PhotoEditor\obj\Debug\PhotoEditor.pdb
 C:\Users\krisy\documents\visual studio 2015\Projects\PhotoEditor\PhotoEditor\obj\Debug\PhotoEditor.csprojResolveAssemblyReference.cache
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\csc.exe
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\vbc.exe
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\VBCSCompiler.exe
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\PhotoEditor.dll.config
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\PhotoEditor.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\PhotoEditor.pdb
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\obj\Debug\PhotoEditor.csprojResolveAssemblyReference.cache
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\obj\Debug\PhotoEditor.dll
+C:\Users\krisy\oxanaKGit\PhotoEditor\PhotoEditor\obj\Debug\PhotoEditor.pdb

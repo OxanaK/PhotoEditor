@@ -1,0 +1,286 @@
+﻿
+/*******************/
+
+   *{
+      box-sizing:border-box;
+    }
+   body{
+       width:100%;
+       font-size:16px;
+    color:black;
+    background-color: white;
+   }
+   .row{
+       width:100%;
+      
+
+     
+   }
+
+
+.totop{
+position:absolute; 
+	bottom:0;
+}
+/****HEADER****/
+#header-nav{
+    background-color:#ffedce;
+    border-radius:0;
+    border:0;
+
+}
+.navbar-header{
+    height: 100px;
+}
+.navbar-brand
+{
+      padding:25px;
+
+}
+.navbar-brand h1{
+    font-family:'Lora', serif;
+    color:#33480d;
+
+    font-size:3em;
+    text-shadow:2px 2px 2px #ddb480;
+    margin-top:0;
+    margin-bottom:0;
+    line-height:1;
+
+}
+
+
+.navbar-brand a:hover,
+.navbar-brand a:focus{
+text-decoration:none;
+}
+
+#nav-list a:hover{
+   border:2px solid #ddb480 ;
+    background:#ddb480;
+     color:#33480d;
+     padding-top:0;
+    font-size:1.5em;
+    font-weight:700;
+    text-transform:uppercase;
+    height:100%;
+  
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #33480d;
+
+ 
+}
+
+.navbar-header button.navbar-toggle:hover {
+  border: 2px solid #33480d;
+  background:#ddb480;
+ 
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+.list-group-item{
+     font-family:'Lora', serif;
+    color:#33480d;
+
+    font-size:1.5em;
+    text-transform:uppercase;
+  text-align:center;
+    text-shadow:1px 1px 1px #ddb480;
+    padding-top:0;
+    margin:0;
+}
+.navbar-header button.navbar-toggle:visited {
+  border: 2px solid #33480d;
+  background:#ddb480;
+ 
+}
+.navbar-nav > li > a {
+    padding-top: 0;
+    padding-bottom: 0;
+   
+}
+.list{
+    padding:0; 
+    margin:0;
+}
+  .row{
+       width:100%;
+       /*padding:15px;*/
+     
+   }
+  .nav-list
+  {
+      height:100%;
+  }
+  .p_menu{
+      font-size:1.2em;
+  }
+ 
+  #collapsable-nav
+  {
+      height:180px;
+             
+  }
+  .navbar-nav {
+     margin:0;
+}
+
+  
+@media(min-width:992px){
+     
+  
+   .col-lg-4
+   {
+     width:33.33%;
+   }
+
+  div.container1:nth-child(1) {
+       padding-left:3%;
+    }
+
+    }
+
+@media(min-width:992px)and (max-width:1010px) {
+    #col1,
+    #col2,
+    #col3 {
+        height: 1540px;
+    }
+}
+@media(min-width:1011px)and (max-width:1070px)
+{
+         #col1,
+         #col2, 
+         #col3{
+     height:1420px;
+ }
+}
+@media(min-width:1071px)and (max-width:1450px)
+{
+         #col1,
+         #col2, 
+         #col3{
+     height:1220px;
+ }
+}
+
+          
+@media(min-width:1451px)
+{
+         #col1,
+         #col2, 
+         #col3{
+     height:950px;
+ }
+}
+@media(max-width:767px) {
+
+    .col-sm-12,
+    .col-xs-12
+     {
+        width: 100%;
+    }
+    #p_menu{
+        font-size:3em;
+    }
+div.container1{
+   margin-left:2.5%;
+
+}
+
+}
+@media(min-width:768px) and (max-width:991px) {
+   
+    .col-md-6 {
+        width: 50%;
+        
+    }
+    .col-md-12 {
+        width: 100%;
+      
+    }
+ #col1,
+ #col2{
+     height:1200px;
+ }
+    #col3{
+      height:auto;
+    }
+    div.container1:not(:nth-child(2)) {
+       padding-left:4%;
+    }
+     div.container1:nth-child(2) {
+       padding-left:0;
+       margin-left:0;
+    }
+     
+  
+}
+
+.cl1
+{
+    font-family:'Lora', serif;
+    color:#33480d;
+    font-size:2.5em;
+    text-transform:uppercase;
+    text-align:center;
+    text-shadow:1px 1px 1px #ddb480;
+}
+#our_menu
+{
+    
+    width:100%;
+     padding-top:10px;
+    padding-bottom:10px;  
+ 
+}
+
+
+
+#p_menu{
+  
+    font-family:'Lora', serif;
+    color:#362e26;
+    font-size:3.5em;
+    text-align:center;
+
+    text-shadow:2px 2px 2px #ddb480;
+}
+
+.p_menu{
+  
+    padding:1%;
+
+}
+.name_seafood,
+.name_meat,
+.name_vege{
+    font-size:2em;
+    text-align:center;
+
+}
+
+.menu
+    {
+      border:none;
+      position:relative; 
+      /*margin-bottom:2.5%;
+      margin-right:2.5%;*/
+        /*padding:10px;*/
+          margin-left:auto;
+     margin-right:auto;
+       margin-bottom:auto;
+     background-color:#ffedce;
+      padding:10px;
+     border:2px solid #362e26;
+     border-radius:5px;
+     color:#362e26;
+  
+    }
+ div.container1{
+          padding-bottom:2%;
+      }

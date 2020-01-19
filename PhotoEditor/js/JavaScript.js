@@ -773,9 +773,9 @@ $(function () {
         // transform image data
         //imageData = transformMatrix(img_canvas, imageData);
 
-        //imageData = grayscale(imageData);
+        imageData = grayscale(imageData);
         //imageData = invert(imageData);
-        imageData = oneColor(imageData, "green");
+        //imageData = oneColor(imageData, "green");
         //imageData = emboss(img_canvas, imageData);
         // draw data back
         ctx.clearRect(0, 0, canvas.width, canvas.height);
